@@ -119,8 +119,6 @@
   .top-tool-btn:hover {
     background: #f1f5f9;
   }
-
-  /* 顶部悬浮计时器与答题进度栏 */
   .sticky-status-bar {
     position: sticky;
     top: 10px;
@@ -166,8 +164,6 @@
     border-radius: 999px;
     white-space: nowrap;
   }
-
-  /* 排行榜面板 */
   .leaderboard-box {
     display: none;
     margin-bottom: 24px;
@@ -226,7 +222,6 @@
   .rank-1 { background: #fef08a; color: #854d0e; }
   .rank-2 { background: #e2e8f0; color: #334155; }
   .rank-3 { background: #fed7aa; color: #9a3412; }
-
   .legend-bar {
     display: flex;
     gap: 10px;
@@ -263,8 +258,6 @@
     border-radius: 50%;
     display: inline-block;
   }
-
-  /* 5大模块分类标题横幅 */
   .section-banner {
     display: flex;
     align-items: center;
@@ -287,8 +280,6 @@
     font-weight: 500;
     opacity: 0.95;
   }
-
-  /* 5大题目主题颜色卡片 */
   .question-card {
     padding: 20px 22px;
     margin-bottom: 18px;
@@ -302,19 +293,14 @@
   }
   .cat-diff { background: #f4f9ff; border-color: #cfe4ff; border-left-color: #0071e3; }
   .badge-diff { background: #d8ebff; color: #0055b3; }
-
   .cat-mem { background: #faf5ff; border-color: #e9d5ff; border-left-color: #8b5cf6; }
   .badge-mem { background: #ede9fe; color: #6d28d9; }
-
   .cat-scene { background: #f2fbf7; border-color: #c6f0dc; border-left-color: #10b981; }
   .badge-scene { background: #d1fae5; color: #047857; }
-
   .cat-ind { background: #fff9f2; border-color: #fde2c4; border-left-color: #f59e0b; }
   .badge-ind { background: #fef3c7; color: #b45309; }
-
   .cat-acc { background: #fff5f8; border-color: #ffd6e4; border-left-color: #ec4899; }
   .badge-acc { background: #fce7f3; color: #be185d; }
-
   .card-header {
     display: flex;
     align-items: center;
@@ -341,7 +327,6 @@
   .badge-type-match    { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
   .badge-type-classify { background: #fae8ff; color: #a21caf; border: 1px solid #f0abfc; }
   .badge-type-roleplay { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
-
   .question-title {
     font-weight: 700;
     margin-bottom: 14px;
@@ -370,8 +355,6 @@
     transform: scale(1.3);
     accent-color: #0071e3;
   }
-
-  /* 互动题型一：连连看配对样式 */
   .match-hint {
     font-size: 15px;
     color: #475569;
@@ -449,8 +432,6 @@
   .pair-tag-2   { background: #8b5cf6; color: #ffffff; }
   .pair-color-3 { border-color: #f59e0b !important; background: #fffbeb !important; }
   .pair-tag-3   { background: #d97706; color: #ffffff; }
-
-  /* 互动题型二：双盒归类题样式 */
   .classify-list {
     display: flex;
     flex-direction: column;
@@ -519,8 +500,6 @@
     margin-bottom: 4px;
     color: #334155;
   }
-
-  /* 互动题型三：实战题样式 */
   .customer-bubble {
     background: #fffbeb;
     border: 2px solid #fcd34d;
@@ -570,7 +549,6 @@
     color: #78350f;
     font-weight: 700;
   }
-
   .verify-single-btn {
     margin-top: 8px;
     padding: 7px 16px;
@@ -582,9 +560,7 @@
     border: none;
     cursor: pointer;
   }
-  .verify-single-btn:hover {
-    background: #005bb5;
-  }
+  .verify-single-btn:hover { background: #005bb5; }
   .reset-sub-btn {
     margin-top: 8px;
     margin-left: 8px;
@@ -605,26 +581,10 @@
     font-size: 16px;
     line-height: 1.6;
   }
-  .feedback.correct {
-    background: #dcfce7;
-    color: #166534;
-    border: 1px solid #86efac;
-  }
-  .feedback.partial {
-    background: #fef9c3;
-    color: #854d0e;
-    border: 1px solid #fde047;
-  }
-  .feedback.wrong {
-    background: #fee2e2;
-    color: #991b1b;
-    border: 1px solid #fca5a5;
-  }
-  .exp-text {
-    margin-top: 6px;
-    color: #1f2937;
-    font-weight: 400;
-  }
+  .feedback.correct { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+  .feedback.partial { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
+  .feedback.wrong { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .exp-text { margin-top: 6px; color: #1f2937; font-weight: 400; }
   .actions {
     margin-top: 34px;
     display: flex;
@@ -641,59 +601,15 @@
     cursor: pointer;
     transition: all 0.15s;
   }
-  .btn-submit {
-    background: linear-gradient(135deg, #0071e3 0%, #0055b3 100%);
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
-  }
-  .btn-submit:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(0, 113, 227, 0.4);
-  }
-  .btn-wrong {
-    display: none;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
-  }
-  .btn-secondary {
-    background: #e2e8f0;
-    color: #1e293b;
-  }
-  .btn-secondary:hover {
-    background: #cbd5e1;
-  }
-  .score-banner {
-    display: none;
-    margin-top: 16px;
-    margin-bottom: 24px;
-    padding: 24px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
-    border: 2px solid #93c5fd;
-    text-align: center;
-  }
-  .score-main {
-    font-size: 25px;
-    font-weight: 800;
-    color: #1e3a8a;
-  }
-  .score-sub {
-    margin-top: 8px;
-    font-size: 16px;
-    color: #334155;
-  }
-
-  /* 满屏礼花画布 */
-  #confettiCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 9999;
-  }
+  .btn-submit { background: linear-gradient(135deg, #0071e3 0%, #0055b3 100%); color: #ffffff; box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3); }
+  .btn-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 113, 227, 0.4); }
+  .btn-wrong { display: none; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
+  .btn-secondary { background: #e2e8f0; color: #1e293b; }
+  .btn-secondary:hover { background: #cbd5e1; }
+  .score-banner { display: none; margin-top: 16px; margin-bottom: 24px; padding: 24px; border-radius: 16px; background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%); border: 2px solid #93c5fd; text-align: center; }
+  .score-main { font-size: 25px; font-weight: 800; color: #1e3a8a; }
+  .score-sub { margin-top: 8px; font-size: 16px; color: #334155; }
+  #confettiCanvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; }
 </style>
 </head>
 <body>
@@ -706,7 +622,6 @@
     <p class="subtitle">一共30题 | 满分100分</p>
   </div>
 
-  <!-- 顶部控制栏：姓名、答题模式切换、音效开关、排行榜 -->
   <div class="control-panel">
     <div class="control-group">
       <label>姓名 <input type="text" id="username" placeholder="请输入姓名"></label>
@@ -721,16 +636,12 @@
     </div>
   </div>
 
-  <!-- 悬浮计时器与答题进度条 -->
   <div class="sticky-status-bar">
     <div class="progress-info" id="progressText">📋 已答 0 / 30 题</div>
-    <div class="progress-track">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
     <div class="timer-badge" id="timerBadge">⏱️ 用时 00:00</div>
   </div>
 
-  <!-- 排行榜展示区（按先分数后用时排名，默认仅显示前10名，管理员密码解锁全部） -->
   <div id="leaderboardBox" class="leaderboard-box">
     <div class="lb-header">
       <div>
@@ -747,26 +658,13 @@
     <div id="lbContent"></div>
   </div>
 
-  <!-- 5大模块颜色图例与筛选 -->
   <div class="legend-bar">
-    <span class="legend-item active-cat" id="filter-all" style="background:#e2e8f0;color:#1e293b;" onclick="filterByCategory('all')">
-      全部模块（30题）
-    </span>
-    <span class="legend-item badge-diff" id="filter-diff" onclick="filterByCategory('diff')">
-      <span class="dot" style="background:#0071e3;"></span>一、产品区别与定位（7题）
-    </span>
-    <span class="legend-item badge-mem" id="filter-mem" onclick="filterByCategory('mem')">
-      <span class="dot" style="background:#8b5cf6;"></span>二、内存与储存类比（5题）
-    </span>
-    <span class="legend-item badge-scene" id="filter-scene" onclick="filterByCategory('scene')">
-      <span class="dot" style="background:#10b981;"></span>三、优势转化与场景（6题）
-    </span>
-    <span class="legend-item badge-ind" id="filter-ind" onclick="filterByCategory('ind')">
-      <span class="dot" style="background:#f59e0b;"></span>四、适用行业与客群（6题）
-    </span>
-    <span class="legend-item badge-acc" id="filter-acc" onclick="filterByCategory('acc')">
-      <span class="dot" style="background:#ec4899;"></span>五、配件搭配与服务（6题）
-    </span>
+    <span class="legend-item active-cat" id="filter-all" style="background:#e2e8f0;color:#1e293b;" onclick="filterByCategory('all')">全部模块（30题）</span>
+    <span class="legend-item badge-diff" id="filter-diff" onclick="filterByCategory('diff')"><span class="dot" style="background:#0071e3;"></span>一、产品区别与定位（7题）</span>
+    <span class="legend-item badge-mem" id="filter-mem" onclick="filterByCategory('mem')"><span class="dot" style="background:#8b5cf6;"></span>二、内存与储存类比（5题）</span>
+    <span class="legend-item badge-scene" id="filter-scene" onclick="filterByCategory('scene')"><span class="dot" style="background:#10b981;"></span>三、优势转化与场景（6题）</span>
+    <span class="legend-item badge-ind" id="filter-ind" onclick="filterByCategory('ind')"><span class="dot" style="background:#f59e0b;"></span>四、适用行业与客群（6题）</span>
+    <span class="legend-item badge-acc" id="filter-acc" onclick="filterByCategory('acc')"><span class="dot" style="background:#ec4899;"></span>五、配件搭配与服务（6题）</span>
   </div>
 
   <div id="scoreBanner" class="score-banner">
@@ -774,7 +672,6 @@
     <div id="scoreSub" class="score-sub"></div>
   </div>
 
-  <!-- 按同一主题分类放置题目 -->
   <div id="quizSectionsContainer"></div>
 
   <div class="actions">
@@ -793,16 +690,14 @@ let currentCategory = "all";
 const ADMIN_PASS = "8888";
 const LB_STORAGE_KEY = "mac_quiz_leaderboard_v4";
 
-/* 计时器变量 */
 let quizStartTime = Date.now();
 let elapsedSeconds = 0;
 let timerInterval = null;
 let quizSubmitted = false;
 
-/* 互动题状态存储 */
-const matchState = {};    // { qid: { pickedLeft: null, links: { leftIdx: rightOrigIdx } } }
-const classifyState = {}; // { qid: { itemIdx: 'desk' | 'cabinet' } }
-const roleplayState = {}; // { qid: { stepIdx: choiceIdx } }
+const matchState = {};    
+const classifyState = {}; 
+const roleplayState = {}; 
 
 const categoryMeta = {
   diff:  { order: 1, title: "一、产品区别与定位", desc: "共7题", cardClass: "cat-diff",  badgeClass: "badge-diff",  bannerClass: "banner-diff" },
@@ -812,313 +707,39 @@ const categoryMeta = {
   acc:   { order: 5, title: "五、配件搭配与服务连带", desc: "共6题", cardClass: "cat-acc",   badgeClass: "badge-acc",   bannerClass: "banner-acc" }
 };
 
-/* 精选30题（满分100分：12道单选×3分=36分，7道连连看×4分=28分，3道归类盒×4分=12分，3道实战题×3分=9分，5道多选×3分=15分） */
 const questions = [
-  /* ==================== 一、产品区别与定位（1-7题，共23分） ==================== */
   { id: 1, cat: "diff", type: "single", points: 3, ans: ["B"], q: "顾客在对比入门款 MacBook Neo 与 MacBook Air，如果顾客需要 15寸大屏幕左右并排核对报表、更强的 M 系列芯片性能以及 MagSafe 磁吸快充，应重点引导升级", opts: { A: "Mac mini", B: "MacBook Air（13寸/15寸）", C: "MacBook Neo 高配版", D: "Studio Display" }, exp: "相比亲民入门的 MacBook Neo，MacBook Air 提供 13寸和 15寸两种尺寸，搭载更强性能的 M 系列芯片、支持双外接显示器与 MagSafe 磁吸快充" },
   { id: 2, cat: "diff", type: "single", points: 3, ans: ["B"], q: "顾客在门店同时对比两款 14寸 MacBook Pro（M6款 Liquid视网膜XDR 与 M5 Pro/Max款 PROLED XDR），两者的核心区别是", opts: { A: "M6款同样配备双层串联OLED屏幕与灵动岛，仅取消了屏幕触控功能", B: "M6款配 Liquid 视网膜 XDR 屏（1600尼特峰值，无触控），适合进阶办公与创作；PROLED款搭载 M5 Pro/Max、双层串联OLED触控屏（2000尼特峰值）、灵动岛且机身更轻，专为重度专业工作流打造", C: "M6款采用无风扇静音设计，而PROLED款内置主动散热双风扇", D: "两款均标配PROLED触控屏与发光Apple标志，唯一区别是起步固态硬盘容量不同" }, exp: "M6款配 1600尼特 Mini-LED 屏（无触控）且内置风扇；PROLED XDR款升级为 2000尼特双层串联OLED触控屏、顶部灵动岛、背部发光Apple标志、M5 Pro/Max芯片，且14寸机身减重约220克至1.38千克" },
   { id: 3, cat: "diff", type: "single", points: 3, ans: ["A"], q: "顾客在对比新款 M6 iMac 24寸的 RMB 12,499（10核版）与 RMB 13,999（12核版），其中 12核高配版独有的配置优势是", opts: { A: "配备4个雷雳4端口、标配带有触控ID的同色系妙控键盘，并可选配纳米纹理玻璃显示屏与2.5Gb高速网口", B: "屏幕尺寸从24寸升级到27寸5K视网膜屏，并支持120Hz自适应刷新率", C: "内置大容量电池，拔掉电源线后可在会议室连续使用12小时", D: "10核基础版包装内不送键盘鼠标，只有12核版本才附赠同色系键鼠" }, exp: "加1500元升至12核版 iMac，不仅CPU和GPU各多2颗核心，还标配带触控ID的同色妙控键盘、4个雷雳4端口，并可选配纳米纹理抗眩光屏与2.5Gb以太网（两款均附赠USB-C同色键鼠）" },
-  {
-    id: 4, cat: "diff", type: "match", points: 4,
-    q: "【机型定位连连看】请将左侧四款在售 Mac 机型，与右侧对应的“核心形态与产品定位”连线配对",
-    leftItems: [
-      "① MacBook Neo",
-      "② iMac 24寸（M6芯片）",
-      "③ Mac mini",
-      "④ Mac Studio"
-    ],
-    rightItems: [
-      "亲民多彩入门笔记本：无风扇零噪音，满足预算有限的学生网课与日常文档办公",
-      "多巴胺超薄一体机：自带4.5K大屏、1200万像素摄像头与同色系USB-C键鼠，一根电源线桌面极简",
-      "高性价比紧凑台式主机：巴掌大小、不含屏幕键鼠，适合工位已有显示器的固定办公用户",
-      "旗舰性能台式工作站：正面自带SD卡槽与双高速口，搭载Max/Ultra芯片，胜任重度3D与本地AI大模型"
-    ],
-    displayRightOrder: [2, 3, 0, 1],
-    exp: "①MacBook Neo 主打亲民轻巧入门；②iMac 24寸是自带4.5K屏与同色键鼠的一体机；③Mac mini 是最高性价比迷你主机；④Mac Studio 是正面带SD卡槽的旗舰算力工作站"
-  },
-  {
-    id: 5, cat: "diff", type: "match", points: 4,
-    q: "【芯片层级连连看】请将左侧 Apple 芯片的四个性能等级，与右侧对应的“算力定位与外接显示器能力”连线配对",
-    leftItems: [
-      "① 基础版芯片（如 M6）",
-      "② Pro 芯片（如 M5 Pro）",
-      "③ Max 芯片（如 M5 Max）",
-      "④ Ultra 芯片（如 M5 Ultra）"
-    ],
-    rightItems: [
-      "日常办公、网课与主流剪辑，14寸MBP与iMac支持外接至多2台高分辨率显示器",
-      "全栈代码编译与多轨4K剪辑，支持外接至多3台高分辨率显示器",
-      "复杂三维建模渲染与大型影视调色，支持外接至多4台高分辨率显示器",
-      "采用UltraFusion封装架构，配256GB内存时带宽高达4.4TB/s，轻松在本地部署大语言模型"
-    ],
-    displayRightOrder: [3, 0, 2, 1],
-    exp: "基础版、Pro、Max、Ultra 芯片在核心规模、内存带宽与外接屏幕数量上逐级跃升，M5 Ultra 内存带宽高达 4.4TB/s"
-  },
+  { id: 4, cat: "diff", type: "match", points: 4, q: "【机型定位连连看】请将左侧四款在售 Mac 机型，与右侧对应的“核心形态与产品定位”连线配对", leftItems: ["① MacBook Neo", "② iMac 24寸（M6芯片）", "③ Mac mini", "④ Mac Studio"], rightItems: ["亲民多彩入门笔记本：无风扇零噪音，满足预算有限的学生网课与日常文档办公", "多巴胺超薄一体机：自带4.5K大屏、1200万像素摄像头与同色系USB-C键鼠，一根电源线桌面极简", "高性价比紧凑台式主机：巴掌大小、不含屏幕键鼠，适合工位已有显示器的固定办公用户", "旗舰性能台式工作站：正面自带SD卡槽与双高速口，搭载Max/Ultra芯片，胜任重度3D与本地AI大模型"], displayRightOrder: [2, 3, 0, 1], exp: "①MacBook Neo 主打亲民轻巧入门；②iMac 24寸是自带4.5K屏与同色键鼠的一体机；③Mac mini 是最高性价比迷你主机；④Mac Studio 是正面带SD卡槽的旗舰算力工作站" },
+  { id: 5, cat: "diff", type: "match", points: 4, q: "【芯片层级连连看】请将左侧 Apple 芯片的四个性能等级，与右侧对应的“算力定位与外接显示器能力”连线配对", leftItems: ["① 基础版芯片（如 M6）", "② Pro 芯片（如 M5 Pro）", "③ Max 芯片（如 M5 Max）", "④ Ultra 芯片（如 M5 Ultra）"], rightItems: ["日常办公、网课与主流剪辑，14寸MBP与iMac支持外接至多2台高分辨率显示器", "全栈代码编译与多轨4K剪辑，支持外接至多3台高分辨率显示器", "复杂三维建模渲染与大型影视调色，支持外接至多4台高分辨率显示器", "采用UltraFusion封装架构，配256GB内存时带宽高达4.4TB/s，轻松在本地部署大语言模型"], displayRightOrder: [3, 0, 2, 1], exp: "基础版、Pro、Max、Ultra 芯片在核心规模、内存带宽与外接屏幕数量上逐级跃升，M5 Ultra 内存带宽高达 4.4TB/s" },
   { id: 6, cat: "diff", type: "multi", points: 3, ans: ["A","B","D"], q: "关于全新 MacBook Pro（PROLED XDR 显示屏版）相比前代机型的硬件突破，说法正确的有", opts: { A: "采用双层串联OLED面板，彻底消除暗场亮字边缘的光晕，HDR与户外SDR峰值亮度均高达2000尼特，对比度达1000万:1", B: "整机架构与散热重新设计，14.2寸减重约220克（仅约1.38kg），16.3寸减重约320克（仅约1.82kg），续航仍长达24小时", C: "由于机身大幅减薄减重，取消了机身侧面的HDMI接口与SD相机卡槽，仅保留雷雳5接口", D: "机身背部经典的发光Apple标志回归（随屏幕联动），并标配3个雷雳5高速端口、HDMI与SD卡槽" }, exp: "PROLED XDR 款在减重两三百克的同时，依然完整保留了 HDMI 接口、SDXC 卡槽与3个雷雳5端口（C错误）" },
   { id: 7, cat: "diff", type: "multi", points: 3, ans: ["A","B","C"], q: "顾客询问新款 MacBook Pro（PROLED XDR）的“屏幕触控、防烧屏与背部发光标志”，正确的解答话术有", opts: { A: "屏幕触控是经典键盘与触控板之外的直觉交互延伸（如点按灵动岛、双指缩放画面），并非为了替代触控板", B: "目前新款触控屏暂不支持 Apple Pencil 手写笔（手写笔专为 iPad 生态研发）", C: "搭载 M5 Pro / M5 Max 专属显示引擎与智能算法，长期监控并动态调配OLED像素使用频率，有效延缓老化、降低烧屏风险", D: "机身背部回归的发光 Apple 标志可在系统显示器设置中单独关闭灯光" }, exp: "背部发光 Apple 标志与屏幕显示联动，不支持单独关闭灯光（D错误）；其余三项均为官方核心解答要点" },
-
-  /* ==================== 二、内存与储存空间类比（8-12题，共17分） ==================== */
   { id: 8, cat: "mem", type: "single", points: 3, ans: ["A"], q: "当顾客预算有限、纠结优先“升统一内存（RAM）”还是“升储存空间（SSD）”时，为什么应优先引导把内存一步到位选大", opts: { A: "因为统一内存直接集成封装在芯片内部，买后无法拆机加装；而储存空间后期随时可通过移动固态硬盘或iCloud+云盘灵活扩容", B: "因为内存越大电脑屏幕亮度越高，而储存空间后期无法通过外接硬盘扩展", C: "因为MacBook内部预留了第二个M.2硬盘空槽可以自己拆机插硬盘条，但没有内存槽", D: "因为升内存比升硬盘便宜得多，且普通U盘插上去也能当运行内存用" }, exp: "Apple 统一内存与芯片一体封装，出厂后无法后期扩容（且普通U盘不能当内存，笔记本内部也无额外M.2空槽）；而储存空间随时可用移动固态硬盘或云盘分担" },
   { id: 9, cat: "mem", type: "single", points: 3, ans: ["B"], q: "关于 Apple Intelligence（苹果智能）在 Mac 上的启用条件与本机存储空间占用，以下对客说明最准确的是", opts: { A: "只要顾客肉身处在中国大陆境内，无论买什么国家版本的Mac、登录哪国Apple ID都能直接启用", B: "启用取决于设备销售版本与Apple ID地区一致（国行Mac搭配中国大陆ID可正常开启本土千问合作模型），且因本地模型库需占用20GB以上系统空间，建议选购充足本机存储", C: "所有AI运算与照片消除完全依赖云端服务器，不占用任何本机内存与硬盘空间", D: "国行Mac只需切换成境外地区Apple ID即可直接启用外区AI模型" }, exp: "Apple Intelligence 核心启用逻辑是“国行设备 + 中国大陆 Apple ID”匹配一致，且因本地运行大模型需占用本机存储空间，更有利于引导客户选配512GB及以上容量" },
-  {
-    id: 10, cat: "mem", type: "classify", points: 4,
-    q: "【办公桌与文件柜归类盒】请将以下4位顾客的真实痛点，分别归入“🖥️ 升统一内存（扩大办公桌桌面）”或“🗄️ 升储存空间（扩大文件柜抽屉）”",
-    leftBtnLabel: "🖥️ 升统一内存（扩大办公桌）",
-    rightBtnLabel: "🗄️ 升储存空间（扩大文件柜）",
-    leftBoxTitle: "🖥️ 已归入【办公桌桌面 / 统一内存】：",
-    rightBoxTitle: "🗄️ 已归入【文件柜抽屉 / 储存空间】：",
-    items: [
-      { text: "① 顾客A：每天同时打开30多个网页标签、Photoshop修图、微信和表格不关，切换时怕卡顿转彩球", target: "desk" },
-      { text: "② 顾客B：手机和相机拍了几万张家庭照片和4K视频原片，全部要长期存在电脑本地备份", target: "cabinet" },
-      { text: "③ 顾客C：需要在本地同时运行大型AI语言模型与多轨视频特效工程，需要CPU与GPU共享超大运行池", target: "desk" },
-      { text: "④ 顾客D：工作五年的微信聊天记录与几百G客户合同归档从不删除，电脑经常提示磁盘已满", target: "cabinet" }
-    ],
-    exp: "①与③属于“同时铺开工作多、运行吞吐量大”，对应扩大办公桌桌面（升统一内存）；②与④属于“长期存放的文件素材体积大”，对应扩大文件柜抽屉（升固态硬盘储存空间）"
-  },
-  {
-    id: 11, cat: "mem", type: "match", points: 4,
-    q: "【内存档位连连看】顾客询问“我该选多大统一内存”，请将左侧四档统一内存容量与右侧对应的“典型客户工作流”连线配对",
-    leftItems: [
-      "① 16GB 统一内存",
-      "② 24GB / 32GB 统一内存",
-      "③ 64GB / 128GB 统一内存",
-      "④ 256GB 统一内存（M5 Ultra）"
-    ],
-    rightItems: [
-      "日常文档办公、网页多开、学生网课与轻度短视频剪辑",
-      "高频多任务办公、大体积图层设计、多轨4K剪辑与代码编译虚拟机",
-      "院线级8K影视后期调色、复杂三维动画渲染与大型交响乐混音工程",
-      "配合4.4TB/s超高带宽，在本地完整加载并高速运行超大规模AI语言模型"
-    ],
-    displayRightOrder: [1, 3, 0, 2],
-    exp: "16GB满足主流日常办公；24GB/32GB适合进阶设计与研发；64GB/128GB面向重度3D与8K影视；256GB（M5 Ultra）专为本地大模型部署与极限工作站打造"
-  },
+  { id: 10, cat: "mem", type: "classify", points: 4, q: "【办公桌与文件柜归类盒】请将以下4位顾客的真实痛点，分别归入“🖥️ 升统一内存（扩大办公桌桌面）”或“🗄️ 升储存空间（扩大文件柜抽屉）”", leftBtnLabel: "🖥️ 升统一内存（扩大办公桌）", rightBtnLabel: "🗄️ 升储存空间（扩大文件柜）", leftBoxTitle: "🖥️ 已归入【办公桌桌面 / 统一内存】：", rightBoxTitle: "🗄️ 已归入【文件柜抽屉 / 储存空间】：", items: [ { text: "① 顾客A：每天同时打开30多个网页标签、Photoshop修图、微信和表格不关，切换时怕卡顿转彩球", target: "desk" }, { text: "② 顾客B：手机和相机拍了几万张家庭照片和4K视频原片，全部要长期存在电脑本地备份", target: "cabinet" }, { text: "③ 顾客C：需要在本地同时运行大型AI语言模型与多轨视频特效工程，需要CPU与GPU共享超大运行池", target: "desk" }, { text: "④ 顾客D：工作五年的微信聊天记录与几百G客户合同归档从不删除，电脑经常提示磁盘已满", target: "cabinet" } ], exp: "①与③属于“同时铺开工作多、运行吞吐量大”，对应扩大办公桌桌面（升统一内存）；②与④属于“长期存放的文件素材体积大”，对应扩大文件柜抽屉（升固态硬盘储存空间）" },
+  { id: 11, cat: "mem", type: "match", points: 4, q: "【内存档位连连看】顾客询问“我该选多大统一内存”，请将左侧四档统一内存容量与右侧对应的“典型客户工作流”连线配对", leftItems: ["① 16GB 统一内存", "② 24GB / 32GB 统一内存", "③ 64GB / 128GB 统一内存", "④ 256GB 统一内存（M5 Ultra）"], rightItems: ["日常文档办公、网页多开、学生网课与轻度短视频剪辑", "高频多任务办公、大体积图层设计、多轨4K剪辑与代码编译虚拟机", "院线级8K影视后期调色、复杂三维动画渲染与大型交响乐混音工程", "配合4.4TB/s超高带宽，在本地完整加载并高速运行超大规模AI语言模型"], displayRightOrder: [1, 3, 0, 2], exp: "16GB满足主流日常办公；24GB/32GB适合进阶设计与研发；64GB/128GB面向重度3D与8K影视；256GB（M5 Ultra）专为本地大模型部署与极限工作站打造" },
   { id: 12, cat: "mem", type: "multi", points: 3, ans: ["A","B","C"], q: "向顾客介绍 Apple 芯片“统一内存设计”的实际好处时，通俗易懂的话术有", opts: { A: "处理器和图形显卡共用同一张超大高速办公桌，不用在内存与显存之间来回复制搬运数据", B: "打开几个G的大型设计工程文件和多软件切换时响应更快、效率更高", C: "在本地运行人工智能大模型或剪辑8K超清视频时，大统一内存可直接充当超大显存使用", D: "统一内存会将系统固态硬盘的一半容量永久划归显卡独占，导致用户可用存文件的空间减半" }, exp: "统一内存是CPU与GPU共享独立的高速运行内存池，不会占用用户的固态硬盘存储容量（D错误）" },
-
-  /* ==================== 三、优势转化与使用场景（13-18题，共21分） ==================== */
   { id: 13, cat: "scene", type: "single", points: 3, ans: ["A"], q: "专业摄影师与印刷设计师常在户外强光下看片，推荐新款 MacBook Pro（PROLED XDR）最核心的屏幕卖点是", opts: { A: "HDR与户外SDR峰值亮度最高均达2000尼特，1000万:1对比度，且首次在单一默认预设中同时原生支持P3与Adobe RGB双广色域", B: "全屏持续亮度为600尼特，仅支持单一sRGB标准色域", C: "在P3色域与Adobe RGB色域之间切换时，必须重启电脑才能生效", D: "采用传统Mini-LED分区背光技术，对比度为100万:1" }, exp: "PROLED XDR 采用双层串联OLED，户外SDR峰值亮度翻倍至2000尼特，对比度高达1000万:1，且在同一默认预设下原生同屏支持 P3 与 Adobe RGB 双色域，印刷青绿色不丢失" },
   { id: 14, cat: "scene", type: "single", points: 3, ans: ["A"], q: "许多传统笔记本拔掉电源线用电池时会自动降频卡顿，而 MacBook 在高铁或咖啡厅不插电剪视频依然流畅，且全天免带充电器，这是因为", opts: { A: "Apple芯片能效比极高，插电与用电池均保持同等满血性能输出，且续航长达18至24小时（支持30分钟快充至50%）", B: "拔掉电源后系统会自动关闭一半处理器核心以强制省电", C: "必须外接200W大型户外电源才能打开视频剪辑软件", D: "不插电时视频导出分辨率会被强制限制在480p" }, exp: "MacBook 无论是否插电源，处理器与图形性能均保持一致的满血输出，配合最高24小时续航与30分钟充50%快充，彻底告别电量焦虑" },
-  {
-    id: 15, cat: "scene", type: "match", points: 4,
-    q: "【升级价值连连看】顾客询问多花3000多元升级新款 MacBook Pro（PROLED XDR 触控屏版）值不值，请将左侧四大升级亮点与右侧对应的“顾客实际受益场景”连线配对",
-    leftItems: [
-      "① 双层串联OLED无背光层（1000万:1对比度）",
-      "② 内部架构与散热模组重塑（减重220g至320g）",
-      "③ 内嵌式屏幕触控与顶部灵动岛",
-      "④ 合盖外接专属音频调校与DICOM医疗模式"
-    ],
-    rightItems: [
-      "彻底消除暗场亮字边缘的光晕，夜景云彩光影与纯黑细节纤毫毕现",
-      "高频背电脑出差肩膀负担大减，且长时间高负载剪辑散热更稳",
-      "伸手即可直觉点按屏幕与实时活动，作为经典触控板的高效延伸",
-      "合上盖子连大屏依然保持饱满音质，且满足医学研究无伪影阅片需求"
-    ],
-    displayRightOrder: [2, 0, 3, 1],
-    exp: "①双层OLED消除光晕；②减重与散热重塑解决差旅负重与高负载发热；③触控与灵动岛带来直觉交互；④合盖音频调校与DICOM模式拓展专业场景"
-  },
-  {
-    id: 16, cat: "scene", type: "match", points: 4,
-    q: "【生态协同连连看】顾客手里已有 iPhone 和 iPad，请将左侧四项“跨设备协同功能”与右侧对应的“门店现场演示场景”连线配对",
-    leftItems: [
-      "① 随航（Sidecar）",
-      "② iPhone 镜像",
-      "③ 通用剪贴板",
-      "④ 隔空投送（AirDrop）"
-    ],
-    rightItems: [
-      "出差在酒店把 iPad 放旁边，免线秒变 Mac 的第二块扩展显示器",
-      "在 Mac 屏幕上直接滑动操作手机 App、查看并回复手机通知",
-      "在 iPhone 上复制一段文字或图片，直接在 Mac 的文档里粘贴出来",
-      "手机刚拍完的几十张高清原片与4K视频，免流量无线秒传进 Mac"
-    ],
-    displayRightOrder: [3, 0, 1, 2],
-    exp: "①随航让iPad秒变扩展屏；②iPhone镜像在Mac上直接控手机；③通用剪贴板跨端复制粘贴；④隔空投送无线秒传大文件"
-  },
-  {
-    id: 17, cat: "scene", type: "classify", points: 4,
-    q: "【顾虑化解归类盒】面对不同背景的顾客顾虑，请将以下4句销售话术，分别归入“💻 化解 Windows 老用户换机顾虑”或“🔒 化解企业高管与财务安全顾虑”",
-    leftBtnLabel: "💻 化解 Windows 换机顾虑",
-    rightBtnLabel: "🔒 化解高管财务安全顾虑",
-    leftBoxTitle: "💻 已归入【化解 Windows 换机顾虑】：",
-    rightBoxTitle: "🔒 已归入【化解高管财务安全顾虑】：",
-    items: [
-      { text: "① 话术A：原生支持微软 Office（Word/Excel/PPT）与WPS，微信、钉钉、飞书、腾讯会议全兼容", target: "desk" },
-      { text: "② 话术B：配备触控ID指纹键与独立安全隔区，一秒解锁确认密码，指纹数据绝不上传云端", target: "cabinet" },
-      { text: "③ 话术C：触控板多指手势像滑手机屏幕一样直觉简单，且 macOS 27 聚焦搜索全天实时秒搜文件", target: "desk" },
-      { text: "④ 话术D：内置硬件级全盘自动加密且不降速，系统纯净无弹窗广告与木马病毒打扰", target: "cabinet" }
-    ],
-    exp: "话术A与C直接打消 Windows 用户对“软件文档兼容与操作习惯”的顾虑；话术B与D直接打消高管与财务对“商业机密防盗与系统纯净度”的顾虑"
-  },
+  { id: 15, cat: "scene", type: "match", points: 4, q: "【升级价值连连看】顾客询问多花3000多元升级新款 MacBook Pro（PROLED XDR 触控屏版）值不值，请将左侧四大升级亮点与右侧对应的“顾客实际受益场景”连线配对", leftItems: ["① 双层串联OLED无背光层（1000万:1对比度）", "② 内部架构与散热模组重塑（减重220g至320g）", "③ 内嵌式屏幕触控与顶部灵动岛", "④ 合盖外接专属音频调校与DICOM医疗模式"], rightItems: ["彻底消除暗场亮字边缘的光晕，夜景云彩光影与纯黑细节纤毫毕现", "高频背电脑出差肩膀负担大减，且长时间高负载剪辑散热更稳", "伸手即可直觉点按屏幕与实时活动，作为经典触控板的高效延伸", "合上盖子连大屏依然保持饱满音质，且满足医学研究无伪影阅片需求"], displayRightOrder: [2, 0, 3, 1], exp: "①双层OLED消除光晕；②减重与散热重塑解决差旅负重与高负载发热；③触控与灵动岛带来直觉交互；④合盖音频调校与DICOM模式拓展专业场景" },
+  { id: 16, cat: "scene", type: "match", points: 4, q: "【生态协同连连看】顾客手里已有 iPhone 和 iPad，请将左侧四项“跨设备协同功能”与右侧对应的“门店现场演示场景”连线配对", leftItems: ["① 随航（Sidecar）", "② iPhone 镜像", "③ 通用剪贴板", "④ 隔空投送（AirDrop）"], rightItems: ["出差在酒店把 iPad 放旁边，免线秒变 Mac 的第二块扩展显示器", "在 Mac 屏幕上直接滑动操作手机 App、查看并回复手机通知", "在 iPhone 上复制一段文字或图片，直接在 Mac 的文档里粘贴出来", "手机刚拍完的几十张高清原片与4K视频，免流量无线秒传进 Mac"], displayRightOrder: [3, 0, 1, 2], exp: "①随航让iPad秒变扩展屏；②iPhone镜像在Mac上直接控手机；③通用剪贴板跨端复制粘贴；④隔空投送无线秒传大文件" },
+  { id: 17, cat: "scene", type: "classify", points: 4, q: "【顾虑化解归类盒】面对不同背景的顾客顾虑，请将以下4句销售话术，分别归入“💻 化解 Windows 老用户换机顾虑”或“🔒 化解企业高管与财务安全顾虑”", leftBtnLabel: "💻 化解 Windows 换机顾虑", rightBtnLabel: "🔒 化解高管财务安全顾虑", leftBoxTitle: "💻 已归入【化解 Windows 换机顾虑】：", rightBoxTitle: "🔒 已归入【化解高管财务安全顾虑】：", items: [ { text: "① 话术A：原生支持微软 Office（Word/Excel/PPT）与WPS，微信、钉钉、飞书、腾讯会议全兼容", target: "desk" }, { text: "② 话术B：配备触控ID指纹键与独立安全隔区，一秒解锁确认密码，指纹数据绝不上传云端", target: "cabinet" }, { text: "③ 话术C：触控板多指手势像滑手机屏幕一样直觉简单，且 macOS 27 聚焦搜索全天实时秒搜文件", target: "desk" }, { text: "④ 话术D：内置硬件级全盘自动加密且不降速，系统纯净无弹窗广告与木马病毒打扰", target: "cabinet" } ], exp: "话术A与C直接打消 Windows 用户对“软件文档兼容与操作习惯”的顾虑；话术B与D直接打消高管与财务对“商业机密防盗与系统纯净度”的顾虑" },
   { id: 18, cat: "scene", type: "multi", points: 3, ans: ["A","C","D"], q: "MacBook Neo 与 MacBook Air 的“无风扇静音设计”转化为顾客实际好处，适合推荐给哪些场景", opts: { A: "大学图书馆、自习室安静备考学习", B: "影视机房连续48小时满负荷渲染大型3D工业动画特效", C: "安静的会议室记录或客户访谈录音", D: "夜间在卧室办公，不打扰家人休息且机身内部不易吸灰" }, exp: "长时间极限满载3D动画特效渲染需要带主动散热风扇的 MacBook Pro 或 Mac Studio（B错误）" },
-
-  /* ==================== 四、适用行业与客群推荐（19-24题，共19分） ==================== */
   { id: 19, cat: "ind", type: "single", points: 3, ans: ["A"], q: "律所与诊所前台接待、高颜值品牌门店收银或家庭书房共用电脑，最适合主推", opts: { A: "iMac 24寸（M6芯片）", B: "Mac Studio", C: "MacBook Pro 14寸", D: "MacBook Pro 16寸顶配" }, exp: "iMac 纤薄多彩颜值高、背面同样美观，一根电源线保持前台与书房整洁，是门面担当首选" },
   { id: 20, cat: "ind", type: "single", points: 3, ans: ["B"], q: "向软件开发程序员、算法与数据分析师推荐 MacBook Pro（M6 或 M5 Pro/Max）的核心理由是", opts: { A: "仅搭载 Ultra 芯片的台式机才允许安装编程软件，笔记本系列均锁死了开发权限", B: "系统底层贴合主流服务器原生Unix环境，多核CPU与双16核神经网络引擎编译代码与跑本地AI极快，且支持外接多台高清显示器", C: "出厂自带盗版破解软件与Windows系统", D: "搭载 M6 芯片的 14寸 MacBook Pro 仅支持外接1台1080p显示器" }, exp: "Mac 凭借贴合服务器系统的原生 Unix 环境、极速代码编译、双16核神经网络引擎与多屏扩展能力，成为程序员群体的主力开发机" },
-  {
-    id: 21, cat: "ind", type: "match", points: 4,
-    q: "【行业客群连连看】请将左侧四类典型进店客户，与右侧最匹配的“首选推荐机型”连线配对",
-    leftItems: [
-      "① 预算有限的高中生与大学新生（写论文、上网课、查资料）",
-      "② 财务审计与咨询顾问（常出差且需大屏左右并排核对两份报表）",
-      "③ 商业摄影师与影视调色师（户外强光看片，严苛要求双色域与SD卡直读）",
-      "④ 三维工业建筑渲染与AI研发团队（固定工位满负荷跑大型工程与本地模型）"
-    ],
-    rightItems: [
-      "MacBook Neo",
-      "MacBook Air 15寸",
-      "MacBook Pro（PROLED XDR 触控屏版）",
-      "Mac Studio（M5 Max / M5 Ultra）"
-    ],
-    displayRightOrder: [2, 3, 0, 1],
-    exp: "①学生入门首选 MacBook Neo；②移动办公+大屏分屏看表首选 Air 15寸；③户外强光双色域修图调色首选 PROLED XDR 版 MBP；④固定工位重度3D与AI研发首选 Mac Studio"
-  },
-  {
-    id: 22, cat: "ind", type: "roleplay", points: 3,
-    q: "【实战题 1】请根据下方进店导演兼摄影师的原话，依次选出最匹配的“主力机型 + 核心话术 + 专业配件”组合",
-    dialogue: "💬 顾客原话：“我是独立纪录片导演兼摄影师，经常在高原户外强光下用SD卡导素材看片，回工作室还要同时外接3台显示器剪辑8K视频，老电脑太重背着肩膀疼……”",
-    steps: [
-      {
-        title: "第一步：锁定最匹配的推荐机型",
-        choices: [
-          "A. MacBook Neo 入门款",
-          "B. 配备 PROLED XDR 显示屏的 MacBook Pro（M5 Pro / M5 Max）",
-          "C. Mac mini 基础款"
-        ],
-        ans: 1
-      },
-      {
-        title: "第二步：提炼最戳中顾客痛点的核心话术",
-        choices: [
-          "A. 户外2000尼特双层OLED无光晕屏 + 自带SD卡槽与雷雳5外接3至4台屏 + 整机大幅减重220g至320g",
-          "B. 无风扇被动散热设计，仅配备2个USB-C接口，适合处理基础Word文档",
-          "C. 自带24寸4.5K一体式屏幕，必须插着电源线固定在办公桌上使用"
-        ],
-        ans: 0
-      },
-      {
-        title: "第三步：推荐最契合工作流的连带配件与服务",
-        choices: [
-          "A. 仅推荐一根普通电源延长线",
-          "B. Studio Display 5K显示器 + 雷雳高速移动固态硬盘 + 妙控板 + AppleCare+",
-          "C. Pro Display XDR 专用 VESA 壁挂转换器（单独购买不配屏幕）"
-        ],
-        ans: 1
-      }
-    ],
-    exp: "针对户外强光看片、SD卡直读、外接3台以上大屏及差旅减重四大痛点，配备 PROLED XDR 的 MacBook Pro（M5 Pro/Max）搭配 Studio Display、雷雳移动固态硬盘、妙控板与 AppleCare+ 是满分完整方案"
-  },
-  {
-    id: 23, cat: "ind", type: "roleplay", points: 3,
-    q: "【实战题 2】请根据下方进店音乐制作人兼播客主播的原话，依次完成三步接待配单",
-    dialogue: "💬 顾客原话：“我是独立编曲师兼播客主播，经常在酒店安静录人声小样，平时戴高阻抗专业监听耳机混音，回工作室习惯把笔记本合上盖子外接大屏幕编曲……”",
-    steps: [
-      {
-        title: "第一步：锁定推荐主力机型",
-        choices: [
-          "A. MacBook Pro 14寸 / 16寸（PROLED XDR 版）",
-          "B. 不配显示器的裸机 Mac mini 带去酒店用",
-          "C. 仅能基础看网页的入门低配设备"
-        ],
-        ans: 0
-      },
-      {
-        title: "第二步：重点展示哪项直击痛点的音频硬件优势",
-        choices: [
-          "A. 机身取消了耳机孔，必须买蓝牙音箱才能听歌",
-          "B. 内置录音室级三麦克风阵列低底噪收音 + 高阻抗耳机插孔直推专业监听耳机 + 首次针对合盖外接显示器做了专属音频调校",
-          "C. 内置麦克风只能录单声道语音备忘录，不能在编曲软件里用"
-        ],
-        ans: 1
-      },
-      {
-        title: "第三步：推荐匹配的桌面外设与新机专属软件权益",
-        choices: [
-          "A. Studio Display 5K显示器 + 妙控键盘与妙控板 + 激活新机赠送的 Apple Creator Studio（创作坊）免费试用权益",
-          "B. 仅推荐购买手机防窥膜",
-          "C. 推荐购买机房服务器导轨"
-        ],
-        ans: 0
-      }
-    ],
-    exp: "MacBook Pro 自带录音室级三麦克风阵列、高阻抗耳机孔，且 PROLED 版首次针对合盖外接显示器做了专属音频调校，配合 Studio Display 与新机赠送的 Creator Studio 试用权益极易打动音频创作者"
-  },
+  { id: 21, cat: "ind", type: "match", points: 4, q: "【行业客群连连看】请将左侧四类典型进店客户，与右侧最匹配的“首选推荐机型”连线配对", leftItems: ["① 预算有限的高中生与大学新生（写论文、上网课、查资料）", "② 财务审计与咨询顾问（常出差且需大屏左右并排核对两份报表）", "③ 商业摄影师与影视调色师（户外强光看片，严苛要求双色域与SD卡直读）", "④ 三维工业建筑渲染与AI研发团队（固定工位满负荷跑大型工程与本地模型）"], rightItems: ["MacBook Neo", "MacBook Air 15寸", "MacBook Pro（PROLED XDR 触控屏版）", "Mac Studio（M5 Max / M5 Ultra）"], displayRightOrder: [2, 3, 0, 1], exp: "①学生入门首选 MacBook Neo；②移动办公+大屏分屏看表首选 Air 15寸；③户外强光双色域修图调色首选 PROLED XDR 版 MBP；④固定工位重度3D与AI研发首选 Mac Studio" },
+  { id: 22, cat: "ind", type: "roleplay", points: 3, q: "【实战题 1】请根据下方进店导演兼摄影师的原话，依次选出最匹配的“主力机型 + 核心话术 + 专业配件”组合", dialogue: "💬 顾客原话：“我是独立纪录片导演兼摄影师，经常在高原户外强光下用SD卡导素材看片，回工作室还要同时外接3台显示器剪辑8K视频，老电脑太重背着肩膀疼……”", steps: [ { title: "第一步：锁定最匹配的推荐机型", choices: ["A. MacBook Neo 入门款", "B. 配备 PROLED XDR 显示屏的 MacBook Pro（M5 Pro / M5 Max）", "C. Mac mini 基础款"], ans: 1 }, { title: "第二步：提炼最戳中顾客痛点的核心话术", choices: ["A. 户外2000尼特双层OLED无光晕屏 + 自带SD卡槽与雷雳5外接3至4台屏 + 整机大幅减重220g至320g", "B. 无风扇被动散热设计，仅配备2个USB-C接口，适合处理基础Word文档", "C. 自带24寸4.5K一体式屏幕，必须插着电源线固定在办公桌上使用"], ans: 0 }, { title: "第三步：推荐最契合工作流的连带配件与服务", choices: ["A. 仅推荐一根普通电源延长线", "B. Studio Display 5K显示器 + 雷雳高速移动固态硬盘 + 妙控板 + AppleCare+", "C. Pro Display XDR 专用 VESA 壁挂转换器（单独购买不配屏幕）"], ans: 1 } ], exp: "针对户外强光看片、SD卡直读、外接3台以上大屏及差旅减重四大痛点，配备 PROLED XDR 的 MacBook Pro（M5 Pro/Max）搭配 Studio Display、雷雳移动固态硬盘、妙控板与 AppleCare+ 是满分完整方案" },
+  { id: 23, cat: "ind", type: "roleplay", points: 3, q: "【实战题 2】请根据下方进店音乐制作人兼播客主播的原话，依次完成三步接待配单", dialogue: "💬 顾客原话：“我是独立编曲师兼播客主播，经常在酒店安静录人声小样，平时戴高阻抗专业监听耳机混音，回工作室习惯把笔记本合上盖子外接大屏幕编曲……”", steps: [ { title: "第一步：锁定推荐主力机型", choices: ["A. MacBook Pro 14寸 / 16寸（PROLED XDR 版）", "B. 不配显示器的裸机 Mac mini 带去酒店用", "C. 仅能基础看网页的入门低配设备"], ans: 0 }, { title: "第二步：重点展示哪项直击痛点的音频硬件优势", choices: ["A. 机身取消了耳机孔，必须买蓝牙音箱才能听歌", "B. 内置录音室级三麦克风阵列低底噪收音 + 高阻抗耳机插孔直推专业监听耳机 + 首次针对合盖外接显示器做了专属音频调校", "C. 内置麦克风只能录单声道语音备忘录，不能在编曲软件里用"], ans: 1 }, { title: "第三步：推荐匹配的桌面外设与新机专属软件权益", choices: ["A. Studio Display 5K显示器 + 妙控键盘与妙控板 + 激活新机赠送的 Apple Creator Studio（创作坊）免费试用权益", "B. 仅推荐购买手机防窥膜", "C. 推荐购买机房服务器导轨"], ans: 0 } ], exp: "MacBook Pro 自带录音室级三麦克风阵列、高阻抗耳机孔，且 PROLED 版首次针对合盖外接显示器做了专属音频调校，配合 Studio Display 与新机赠送的 Creator Studio 试用权益极易打动音频创作者" },
   { id: 24, cat: "ind", type: "multi", points: 3, ans: ["A","B","C"], q: "关于向固定工位客户推荐 Mac mini 或 Mac Studio 的销售逻辑，以下正确的有", opts: { A: "家里或工位已有显示器和键鼠、预算敏感的客户，主推 Mac mini 性价比最高", B: "购买 Mac mini 或 Mac Studio 单主机时，必须提醒搭配显示器、妙控键盘与妙控鼠标/妙控板", C: "面对多轨8K视频调色、三维工业渲染或本地大模型研发团队，应主推散热更强、正面带SD卡槽的 Mac Studio", D: "Mac mini 与 Mac Studio 机身内部均内置大容量锂电池，停电或拔掉电源也能带去咖啡厅用一天" }, exp: "Mac mini 与 Mac Studio 均为台式主机，不内置电池，必须插电并连接显示器使用（D错误）" },
-
-  /* ==================== 五、配件搭配与服务连带（25-30题，共20分） ==================== */
   { id: 25, cat: "acc", type: "single", points: 3, ans: ["A"], q: "顾客在对比苹果官方两款显示器 Studio Display 与 Pro Display XDR，以下区分与提醒话术完全准确的是", opts: { A: "Studio Display 为27寸5K屏且内置摄像头与六扬声器；Pro Display XDR 为32寸6K专业调色屏，包装内不含支架，必须提醒额外选配 Pro Stand 支架或 VESA 壁挂转换器", B: "两款显示器包装内均不带支架，且均内置了 macOS 系统可脱离电脑主机独立运行", C: "Studio Display 为32寸6K屏，Pro Display XDR 为24寸4.5K屏且自带同色系键盘鼠标", D: "Pro Display XDR 包装内已免费附赠 Pro Stand 专业支架与妙控板" }, exp: "Studio Display 是27寸5K（自带摄像头、六扬声器与支架）；Pro Display XDR 是32寸6K旗舰屏，包装内不含支架，必须提醒客户按安装方式加购 Pro Stand 或 VESA 壁挂转换器" },
   { id: 26, cat: "acc", type: "single", points: 3, ans: ["B"], q: "购买新款 Mac 的顾客询问 iCloud+ 云空间与 Apple Creator Studio（创作坊）新机免费试用政策，正确的解答是", opts: { A: "新机免费赠送终身买断制 1TB iCloud+ 云空间，无需按月订阅", B: "购买符合条件的新款Mac可获赠 Creator Studio 免费试用期；新机 iCloud+ 首月免费试用提供 50GB 档位，高容量需求客户可引导直接升级至 2TB", C: "一旦取消 iCloud+ 订阅，用户以前上传的所有照片会在当天被立即彻底清空", D: "换机时系统不提供任何临时云备份空间" }, exp: "新机享 Creator Studio 免费试用及 iCloud+ 50GB 首月免费试用（官方无1TB档位且无买断方案，高容量需求引导升至2TB；退订后整机备份保留180天缓冲期）" },
   { id: 27, cat: "acc", type: "single", points: 3, ans: ["B"], q: "针对经常带电脑出差或去图书馆、担心不小心摔裂屏幕或咖啡泼溅进水的顾客，必推的服务保障是", opts: { A: "仅购买第三方塑料键盘膜", B: "AppleCare+ 服务计划（延长整机官方保修至3年，涵盖意外跌落碎屏与液体泼溅进水原厂维修、电池低于80%免费更换及专家优先支持）", C: "告知顾客苹果电脑进水属于免费保修范围，无需购买任何服务", D: "告知顾客购买 AppleCare+ 后如果3年没修过电脑，到期可全额退还服务费" }, exp: "意外碎屏与液体进水不在普通1年有限保修内，搭配 AppleCare+ 可享3年官方保修与意外损坏低成本原厂维修（到期未出险不退费）" },
-  {
-    id: 28, cat: "acc", type: "match", points: 4,
-    q: "【配件痛点连连看】请将左侧四款高频连带配件，与右侧对应的“解决顾客使用痛点场景”连线配对",
-    leftItems: [
-      "① USB-C 数字影音多端口转换器",
-      "② 妙控板（Magic Trackpad）",
-      "③ 雷雳高速移动固态硬盘",
-      "④ AirPods 耳机"
-    ],
-    rightItems: [
-      "去客户公司开会遇到老式HDMI投影仪和同事递来的方形USB-A口U盘，即插即用不尴尬",
-      "笔记本合盖外接大屏或用台式机时，依然能用大面积多指手势顺滑缩放设计画布与视频时间轴",
-      "配合雷雳高速接口，秒速读写动辄几百G的4K/8K视频工程素材库，为本机硬盘减负",
-      "在 Mac、iPhone 与 iPad 之间自动无缝切换音频，外出视频会议通话降噪清晰"
-    ],
-    displayRightOrder: [2, 0, 3, 1],
-    exp: "①转换器解决HDMI投屏与插U盘刚需；②妙控板解决外接大屏与台式机手势触控痛点；③雷雳移动固态硬盘解决大体积素材高速存取；④AirPods 实现跨设备无缝听音通话"
-  },
-  {
-    id: 29, cat: "acc", type: "classify", points: 4,
-    q: "【配件归类盒】请根据顾客购买的主机类型，将以下4组连带配件方案分别归入“🖥️ 买 Mac mini / Studio 台式主机必配”或“💻 买 MacBook Neo / Air 轻薄本差旅必配”",
-    leftBtnLabel: "🖥️ 台式单主机必配",
-    rightBtnLabel: "💻 轻薄本差旅必配",
-    leftBoxTitle: "🖥️ 已归入【Mac mini / Studio 台式主机必配】：",
-    rightBoxTitle: "💻 已归入【MacBook Neo / Air 轻薄本差旅必配】：",
-    items: [
-      { text: "① 方案A：Studio Display 5K显示器 + 带触控ID的妙控键盘（解决单主机无屏幕无键盘无法开机的刚需）", target: "desk" },
-      { text: "② 方案B：轻便防震内胆包 + USB-C 多端口转换器（解决每天装包通勤防刮花与外出开会接投影仪痛点）", target: "cabinet" },
-      { text: "③ 方案C：妙控鼠标或大面积妙控板（完成固定工位台式主机桌面操控三件套闭环）", target: "desk" },
-      { text: "④ 方案D：AppleCare+ 意外损坏保障 + 便携快充头（解决高频出差途中跌落磕碰与咖啡厅泼溅风险）", target: "cabinet" }
-    ],
-    exp: "方案A与C是购买无屏幕无键鼠台式主机（Mac mini / Studio）的必配外设三件套；方案B与D是购买轻薄笔记本移动出差的黄金保护与转接组合"
-  },
-  {
-    id: 30, cat: "acc", type: "roleplay", points: 3,
-    q: "【实战题 3】一位金融咨询顾问进店买电脑，请根据其原话完成三步接待配单",
-    dialogue: "💬 顾客原话：“我每周要飞三个城市见客户演说PPT，经常在飞机上同时打开十几个大型财务表格和几十个网页核对数据，客户会议室都是老式HDMI投影仪，还怕出差路上把电脑摔了或洒上咖啡……”",
-    steps: [
-      {
-        title: "第一步：锁定推荐机型与内存配置",
-        choices: [
-          "A. MacBook Air 15寸（并引导一步到位升级至 24GB/32GB 大统一内存）",
-          "B. Mac Studio 台式主机天天装行李箱托运",
-          "C. 仅选最低配小内存且不建议做任何配置升级"
-        ],
-        ans: 0
-      },
-      {
-        title: "第二步：现场演示哪项最打动她的核心优势",
-        choices: [
-          "A. 15寸宽敞大屏左右分屏核对两份大报表免来回切换 + 18小时超长续航飞机上不插电依然满血流畅",
-          "B. 机身内置双风扇高噪音散热",
-          "C. 必须全程连接Wi-Fi才能打开本地Excel表格"
-        ],
-        ans: 0
-      },
-      {
-        title: "第三步：搭配最契合差旅痛点的配件与服务组合",
-        choices: [
-          "A. VESA 壁挂转换器 + 台式机电源线",
-          "B. USB-C数字影音多端口转换器（连HDMI投影仪与U盘） + 轻便防震内胆包 + AppleCare+ 服务计划",
-          "C. 告知客户无需买任何转换器或保障服务"
-        ],
-        ans: 1
-      }
-    ],
-    exp: "针对差旅分屏看大表、飞机离电办公、客户会议室HDMI投屏及路上防摔防泼溅需求，MacBook Air 15寸（升大内存）+ USB-C多端口转换器 + 内胆包 + AppleCare+ 是最完美的商务成交方案"
-  }
+  { id: 28, cat: "acc", type: "match", points: 4, q: "【配件痛点连连看】请将左侧四款高频连带配件，与右侧对应的“解决顾客使用痛点场景”连线配对", leftItems: ["① USB-C 数字影音多端口转换器", "② 妙控板（Magic Trackpad）", "③ 雷雳高速移动固态硬盘", "④ AirPods 耳机"], rightItems: ["去客户公司开会遇到老式HDMI投影仪和同事递来的方形USB-A口U盘，即插即用不尴尬", "笔记本合盖外接大屏或用台式机时，依然能用大面积多指手势顺滑缩放设计画布与视频时间轴", "配合雷雳高速接口，秒速读写动辄几百G的4K/8K视频工程素材库，为本机硬盘减负", "在 Mac、iPhone 与 iPad 之间自动无缝切换音频，外出视频会议通话降噪清晰"], displayRightOrder: [2, 0, 3, 1], exp: "①转换器解决HDMI投屏与插U盘刚需；②妙控板解决外接大屏与台式机手势触控痛点；③雷雳移动固态硬盘解决大体积素材高速存取；④AirPods 实现跨设备无缝听音通话" },
+  { id: 29, cat: "acc", type: "classify", points: 4, q: "【配件归类盒】请根据顾客购买的主机类型，将以下4组连带配件方案分别归入“🖥️ 买 Mac mini / Studio 台式主机必配”或“💻 买 MacBook Neo / Air 轻薄本差旅必配”", leftBtnLabel: "🖥️ 台式单主机必配", rightBtnLabel: "💻 轻薄本差旅必配", leftBoxTitle: "🖥️ 已归入【Mac mini / Studio 台式主机必配】：", rightBoxTitle: "💻 已归入【MacBook Neo / Air 轻薄本差旅必配】：", items: [ { text: "① 方案A：Studio Display 5K显示器 + 带触控ID的妙控键盘（解决单主机无屏幕无键盘无法开机的刚需）", target: "desk" }, { text: "② 方案B：轻便防震内胆包 + USB-C 多端口转换器（解决每天装包通勤防刮花与外出开会接投影仪痛点）", target: "cabinet" }, { text: "③ 方案C：妙控鼠标或大面积妙控板（完成固定工位台式主机桌面操控三件套闭环）", target: "desk" }, { text: "④ 方案D：AppleCare+ 意外损坏保障 + 便携快充头（解决高频出差途中跌落磕碰与咖啡厅泼溅风险）", target: "cabinet" } ], exp: "方案A与C是购买无屏幕无键鼠台式主机（Mac mini / Studio）的必配外设三件套；方案B与D是购买轻薄笔记本移动出差的黄金保护与转接组合" },
+  { id: 30, cat: "acc", type: "roleplay", points: 3, q: "【实战题 3】一位金融咨询顾问进店买电脑，请根据其原话完成三步接待配单", dialogue: "💬 顾客原话：“我每周要飞三个城市见客户演说PPT，经常在飞机上同时打开十几个大型财务表格和几十个网页核对数据，客户会议室都是老式HDMI投影仪，还怕出差路上把电脑摔了或洒上咖啡……”", steps: [ { title: "第一步：锁定推荐机型与内存配置", choices: ["A. MacBook Air 15寸（并引导一步到位升级至 24GB/32GB 大统一内存）", "B. Mac Studio 台式主机天天装行李箱托运", "C. 仅选最低配小内存且不建议做任何配置升级"], ans: 0 }, { title: "第二步：现场演示哪项最打动她的核心优势", choices: ["A. 15寸宽敞大屏左右分屏核对两份大报表免来回切换 + 18小时超长续航飞机上不插电依然满血流畅", "B. 机身内置双风扇高噪音散热", "C. 必须全程连接Wi-Fi才能打开本地Excel表格"], ans: 0 }, { title: "第三步：搭配最契合差旅痛点的配件与服务组合", choices: ["A. VESA 壁挂转换器 + 台式机电源线", "B. USB-C数字影音多端口转换器（连HDMI投影仪与U盘） + 轻便防震内胆包 + AppleCare+ 服务计划", "C. 告知客户无需买任何转换器或保障服务"], ans: 1 } ], exp: "针对差旅分屏看大表、飞机离电办公、客户会议室HDMI投屏及路上防摔防泼溅需求，MacBook Air 15寸（升大内存）+ USB-C多端口转换器 + 内胆包 + AppleCare+ 是最完美的商务成交方案" }
 ];
 
-/* ==================== 计时器与进度条逻辑 ==================== */
 function formatDuration(sec) {
   const m = Math.floor(sec / 60);
   const s = sec % 60;
@@ -1143,9 +764,7 @@ function startQuizTimer() {
 
 function updateTimerUI() {
   const el = document.getElementById("timerBadge");
-  if (el) {
-    el.innerText = "⏱️ 用时 " + formatDuration(elapsedSeconds);
-  }
+  if (el) el.innerText = "⏱️ 用时 " + formatDuration(elapsedSeconds);
 }
 
 function isQuestionAnswered(item) {
@@ -1167,26 +786,19 @@ function isQuestionAnswered(item) {
 
 function updateProgressUI() {
   let count = 0;
-  questions.forEach(function(item) {
-    if (isQuestionAnswered(item)) count += 1;
-  });
+  questions.forEach(function(item) { if (isQuestionAnswered(item)) count += 1; });
   const total = questions.length;
   document.getElementById("progressText").innerText = "📋 已答 " + count + " / " + total + " 题";
   document.getElementById("progressFill").style.width = Math.round((count / total) * 100) + "%";
 }
 
-/* ==================== Web Audio 合成音效系统 ==================== */
 let audioCtx = null;
 function getAudioCtx() {
   if (!audioCtx) {
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    if (AudioContextClass) {
-      audioCtx = new AudioContextClass();
-    }
+    if (AudioContextClass) audioCtx = new AudioContextClass();
   }
-  if (audioCtx && audioCtx.state === "suspended") {
-    audioCtx.resume();
-  }
+  if (audioCtx && audioCtx.state === "suspended") audioCtx.resume();
   return audioCtx;
 }
 
@@ -1208,26 +820,14 @@ function playTone(freq, type, duration, delay) {
 }
 
 function playSoundClick() { playTone(620, "sine", 0.05, 0); }
-function playSoundCorrect() {
-  playTone(523.25, "triangle", 0.14, 0);
-  playTone(659.25, "triangle", 0.18, 0.1);
-}
-function playSoundWrong() {
-  playTone(260, "sawtooth", 0.16, 0);
-  playTone(210, "sawtooth", 0.22, 0.12);
-}
-function playSoundSubmit() {
-  playTone(440, "triangle", 0.12, 0);
-  playTone(554.37, "triangle", 0.12, 0.1);
-  playTone(659.25, "triangle", 0.24, 0.2);
-}
+function playSoundCorrect() { playTone(523.25, "triangle", 0.14, 0); playTone(659.25, "triangle", 0.18, 0.1); }
+function playSoundWrong() { playTone(260, "sawtooth", 0.16, 0); playTone(210, "sawtooth", 0.22, 0.12); }
+function playSoundSubmit() { playTone(440, "triangle", 0.12, 0); playTone(554.37, "triangle", 0.12, 0.1); playTone(659.25, "triangle", 0.24, 0.2); }
 function playSoundFanfare() {
   const notes = [523.25, 659.25, 783.99, 1046.5, 783.99, 1046.5];
   const times = [0, 0.12, 0.24, 0.36, 0.55, 0.70];
   const durs  = [0.12, 0.12, 0.12, 0.22, 0.14, 0.45];
-  for (let i = 0; i < notes.length; i++) {
-    playTone(notes[i], "triangle", durs[i], times[i]);
-  }
+  for (let i = 0; i < notes.length; i++) playTone(notes[i], "triangle", durs[i], times[i]);
 }
 
 function toggleSound() {
@@ -1237,91 +837,50 @@ function toggleSound() {
   if (soundEnabled) playSoundClick();
 }
 
-/* 满屏礼花特效 */
 let confettiAnimId = null;
 function launchConfetti() {
   const canvas = document.getElementById("confettiCanvas");
   const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
   if (confettiAnimId) cancelAnimationFrame(confettiAnimId);
-
   const colors = ["#ff3b30", "#ff9500", "#ffcc00", "#34c759", "#007aff", "#5856d6", "#ff2d55", "#00c7be"];
   const particles = [];
   for (let i = 0; i < 240; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height - canvas.height,
-      w: Math.random() * 10 + 6,
-      h: Math.random() * 6 + 4,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      vx: (Math.random() - 0.5) * 5,
-      vy: Math.random() * 4 + 3,
-      angle: Math.random() * Math.PI * 2,
-      spin: (Math.random() - 0.5) * 0.2
-    });
+    particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height, w: Math.random() * 10 + 6, h: Math.random() * 6 + 4, color: colors[Math.floor(Math.random() * colors.length)], vx: (Math.random() - 0.5) * 5, vy: Math.random() * 4 + 3, angle: Math.random() * Math.PI * 2, spin: (Math.random() - 0.5) * 0.2 });
   }
-
   const start = Date.now();
   function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const elapsed = Date.now() - start;
     particles.forEach(function(p) {
-      p.x += p.vx;
-      p.y += p.vy;
-      p.angle += p.spin;
-      ctx.save();
-      ctx.translate(p.x, p.y);
-      ctx.rotate(p.angle);
-      ctx.fillStyle = p.color;
-      ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
-      ctx.restore();
+      p.x += p.vx; p.y += p.vy; p.angle += p.spin;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.angle); ctx.fillStyle = p.color; ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); ctx.restore();
     });
-    if (elapsed < 5500) {
-      confettiAnimId = requestAnimationFrame(drawFrame);
-    } else {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
+    if (elapsed < 5500) confettiAnimId = requestAnimationFrame(drawFrame);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
   drawFrame();
 }
 
-function celebrateFullScore() {
-  playSoundFanfare();
-  launchConfetti();
-}
+function celebrateFullScore() { playSoundFanfare(); launchConfetti(); }
 
-/* 切换两种答题模式 */
 function setQuizMode(mode) {
   quizMode = mode;
   document.getElementById("modeInstantBtn").className = (mode === "instant") ? "mode-btn active" : "mode-btn";
   document.getElementById("modeExamBtn").className = (mode === "exam") ? "mode-btn active" : "mode-btn";
   playSoundClick();
-
-  document.querySelectorAll(".verify-single-btn").forEach(function(btn) {
-    btn.style.display = (mode === "instant") ? "inline-block" : "none";
-  });
-  if (mode === "exam") {
-    document.querySelectorAll(".feedback").forEach(function(fb) {
-      fb.style.display = "none";
-    });
-  }
+  document.querySelectorAll(".verify-single-btn").forEach(function(btn) { btn.style.display = (mode === "instant") ? "inline-block" : "none"; });
+  if (mode === "exam") document.querySelectorAll(".feedback").forEach(function(fb) { fb.style.display = "none"; });
 }
 
-/* 初始化互动题状态 */
 function initInteractiveStates() {
   questions.forEach(function(item) {
-    if (item.type === "match") {
-      matchState[item.id] = { pickedLeft: null, links: {} };
-    } else if (item.type === "classify") {
-      classifyState[item.id] = {};
-    } else if (item.type === "roleplay") {
-      roleplayState[item.id] = {};
-    }
+    if (item.type === "match") matchState[item.id] = { pickedLeft: null, links: {} };
+    else if (item.type === "classify") classifyState[item.id] = {};
+    else if (item.type === "roleplay") roleplayState[item.id] = {};
   });
 }
 
-/* 渲染整张试卷 */
 function renderQuiz() {
   initInteractiveStates();
   const container = document.getElementById("quizSectionsContainer");
@@ -1336,9 +895,7 @@ function renderQuiz() {
 
     const banner = document.createElement("div");
     banner.className = "section-banner " + meta.bannerClass;
-    banner.innerHTML =
-      "<span>" + meta.title + "</span>" +
-      '<span class="section-desc">' + meta.desc + "</span>";
+    banner.innerHTML = "<span>" + meta.title + "</span>" + '<span class="section-desc">' + meta.desc + "</span>";
     sectionWrap.appendChild(banner);
 
     const catQuestions = questions.filter(function(q) { return q.cat === catKey; });
@@ -1348,21 +905,11 @@ function renderQuiz() {
       card.id = "card" + item.id;
       card.setAttribute("data-cat", item.cat);
 
-      let typeBadgeClass = "badge-type-single";
-      let typeLabel = "单选题（3分）";
-      if (item.type === "multi") {
-        typeBadgeClass = "badge-type-multi";
-        typeLabel = "多选题（选对1项得1分，错选不得分）";
-      } else if (item.type === "match") {
-        typeBadgeClass = "badge-type-match";
-        typeLabel = "🔗 连连看配对题（连对1组得1分）";
-      } else if (item.type === "classify") {
-        typeBadgeClass = "badge-type-classify";
-        typeLabel = "🗂️ 互动归类盒（归对1项得1分）";
-      } else if (item.type === "roleplay") {
-        typeBadgeClass = "badge-type-roleplay";
-        typeLabel = "💬 实战题（选对1步得1分）";
-      }
+      let typeBadgeClass = "badge-type-single"; let typeLabel = "单选题（3分）";
+      if (item.type === "multi") { typeBadgeClass = "badge-type-multi"; typeLabel = "多选题（选对1项得1分，错选不得分）"; }
+      else if (item.type === "match") { typeBadgeClass = "badge-type-match"; typeLabel = "🔗 连连看配对题（连对1组得1分）"; }
+      else if (item.type === "classify") { typeBadgeClass = "badge-type-classify"; typeLabel = "🗂️ 互动归类盒（归对1项得1分）"; }
+      else if (item.type === "roleplay") { typeBadgeClass = "badge-type-roleplay"; typeLabel = "💬 实战题（选对1步得1分）"; }
 
       const verifyBtnDisplay = (quizMode === "instant") ? "inline-block" : "none";
       let bodyHtml = "";
@@ -1371,9 +918,7 @@ function renderQuiz() {
         const inputType = item.type === "single" ? "radio" : "checkbox";
         let optsHtml = "";
         ["A", "B", "C", "D"].forEach(function(key) {
-          optsHtml +=
-            '<label><input type="' + inputType + '" name="q' + item.id + '" value="' + key + '" onchange="onOptionSelect(' + item.id + ')">' +
-            key + ". " + item.opts[key] + "</label>";
+          optsHtml += '<label><input type="' + inputType + '" name="q' + item.id + '" value="' + key + '" onchange="onOptionSelect(' + item.id + ')">' + key + ". " + item.opts[key] + "</label>";
         });
         bodyHtml = '<div class="options">' + optsHtml + "</div>";
       } else if (item.type === "match") {
@@ -1385,17 +930,13 @@ function renderQuiz() {
       }
 
       let extraResetBtn = "";
-      if (item.type === "match") {
-        extraResetBtn = '<button type="button" class="reset-sub-btn" onclick="clearMatchQuestion(' + item.id + ')">清空本题连线</button>';
-      }
+      if (item.type === "match") extraResetBtn = '<button type="button" class="reset-sub-btn" onclick="clearMatchQuestion(' + item.id + ')">清空本题连线</button>';
 
       card.innerHTML =
-        '<div class="card-header">' +
-          '<div class="badge-group">' +
-            '<span class="badge ' + meta.badgeClass + '">' + meta.title.split("、")[1] + "</span>" +
-            '<span class="badge ' + typeBadgeClass + '">' + typeLabel + "</span>" +
-          "</div>" +
-        "</div>" +
+        '<div class="card-header"><div class="badge-group">' +
+          '<span class="badge ' + meta.badgeClass + '">' + meta.title.split("、")[1] + "</span>" +
+          '<span class="badge ' + typeBadgeClass + '">' + typeLabel + "</span>" +
+        "</div></div>" +
         '<div class="question-title">' + item.id + ". " + item.q + "</div>" +
         bodyHtml +
         '<button type="button" class="verify-single-btn" id="vbtn' + item.id + '" style="display:' + verifyBtnDisplay + ';" onclick="verifyOneQuestion(' + item.id + ')">验证本题答案</button>' +
@@ -1404,42 +945,29 @@ function renderQuiz() {
 
       sectionWrap.appendChild(card);
     });
-
     container.appendChild(sectionWrap);
   });
-
   updateProgressUI();
 }
 
-/* 构建连连看 HTML */
 function buildMatchHtml(item) {
   let leftColHtml = "";
   item.leftItems.forEach(function(text, lIdx) {
-    leftColHtml +=
-      '<div class="match-item" id="match-L-' + item.id + '-' + lIdx + '" onclick="onPickMatchLeft(' + item.id + ',' + lIdx + ')">' +
-        "<span>" + text + "</span>" +
-        '<span class="match-tag" id="match-Ltag-' + item.id + '-' + lIdx + '" style="display:none;"></span>' +
-      "</div>";
+    leftColHtml += '<div class="match-item" id="match-L-' + item.id + '-' + lIdx + '" onclick="onPickMatchLeft(' + item.id + ',' + lIdx + ')"><span>' + text + '</span><span class="match-tag" id="match-Ltag-' + item.id + '-' + lIdx + '" style="display:none;"></span></div>';
   });
 
   let rightColHtml = "";
   item.displayRightOrder.forEach(function(origRIdx, dispPos) {
     const rText = item.rightItems[origRIdx];
-    rightColHtml +=
-      '<div class="match-item" id="match-R-' + item.id + '-' + dispPos + '" data-orig="' + origRIdx + '" onclick="onPickMatchRight(' + item.id + ',' + dispPos + ',' + origRIdx + ')">' +
-        '<span class="match-tag" id="match-Rtag-' + item.id + '-' + dispPos + '" style="display:none;"></span>' +
-        "<span>" + rText + "</span>" +
-      "</div>";
+    rightColHtml += '<div class="match-item" id="match-R-' + item.id + '-' + dispPos + '" data-orig="' + origRIdx + '" onclick="onPickMatchRight(' + item.id + ',' + dispPos + ',' + origRIdx + ')"><span class="match-tag" id="match-Rtag-' + item.id + '-' + dispPos + '" style="display:none;"></span><span>' + rText + "</span></div>";
   });
 
-  return (
-    '<div class="match-hint">💡 操作方式：先点击左侧任意卡片，再点击右侧对应的卡片即可完成连线（再次点击可重连）</div>' +
+  return '<div class="match-hint">💡 操作方式：先点击左侧任意卡片，再点击右侧对应的卡片即可完成连线（再次点击可重连）</div>' +
     '<div class="match-board" id="match-board-' + item.id + '">' +
       '<div class="match-col">' + leftColHtml + "</div>" +
       '<div class="match-svg-wrap"><svg class="match-svg" id="match-svg-' + item.id + '"></svg></div>' +
       '<div class="match-col">' + rightColHtml + "</div>" +
-    "</div>"
-  );
+    "</div>";
 }
 
 function onPickMatchLeft(qid, lIdx) {
@@ -1451,564 +979,10 @@ function onPickMatchLeft(qid, lIdx) {
 
 function onPickMatchRight(qid, dispPos, origRIdx) {
   const st = matchState[qid];
-  if (st.pickedLeft === null) {
-    alert("请先点击左侧的一项，再点击右侧进行连线配对👌");
-    return;
-  }
+  if (st.pickedLeft === null) { alert("请先点击左侧的一项，再点击右侧进行连线配对👌"); return; }
   playSoundClick();
-  Object.keys(st.links).forEach(function(k) {
-    if (st.links[k] === origRIdx) {
-      delete st.links[k];
-    }
-  });
+  Object.keys(st.links).forEach(function(k) { if (st.links[k] === origRIdx) delete st.links[k]; });
   st.links[st.pickedLeft] = origRIdx;
   st.pickedLeft = null;
   refreshMatchUI(qid);
-  updateProgressUI();
-}
-
-function clearMatchQuestion(qid) {
-  playSoundClick();
-  matchState[qid] = { pickedLeft: null, links: {} };
-  refreshMatchUI(qid);
-  document.getElementById("fb" + qid).style.display = "none";
-  updateProgressUI();
-}
-
-function refreshMatchUI(qid) {
-  const item = questions.find(function(q) { return q.id === qid; });
-  const st = matchState[qid];
-  const pairLabels = ["配对①", "配对②", "配对③", "配对④"];
-  const strokeColors = ["#0071e3", "#10b981", "#8b5cf6", "#d97706"];
-
-  item.leftItems.forEach(function(_, lIdx) {
-    const el = document.getElementById("match-L-" + qid + "-" + lIdx);
-    const tag = document.getElementById("match-Ltag-" + qid + "-" + lIdx);
-    if (!el || !tag) return;
-    el.className = "match-item";
-    tag.style.display = "none";
-    if (st.pickedLeft === lIdx) {
-      el.classList.add("active-pick");
-    }
-    if (st.links.hasOwnProperty(lIdx)) {
-      el.classList.add("pair-color-" + lIdx);
-      tag.className = "match-tag pair-tag-" + lIdx;
-      tag.innerText = pairLabels[lIdx];
-      tag.style.display = "inline-block";
-    }
-  });
-
-  item.displayRightOrder.forEach(function(origRIdx, dispPos) {
-    const el = document.getElementById("match-R-" + qid + "-" + dispPos);
-    const tag = document.getElementById("match-Rtag-" + qid + "-" + dispPos);
-    if (!el || !tag) return;
-    el.className = "match-item";
-    tag.style.display = "none";
-
-    Object.keys(st.links).forEach(function(lKey) {
-      if (st.links[lKey] === origRIdx) {
-        const cIdx = parseInt(lKey, 10);
-        el.classList.add("pair-color-" + cIdx);
-        tag.className = "match-tag pair-tag-" + cIdx;
-        tag.innerText = pairLabels[cIdx];
-        tag.style.display = "inline-block";
-      }
-    });
-  });
-
-  const svg = document.getElementById("match-svg-" + qid);
-  const board = document.getElementById("match-board-" + qid);
-  if (!svg || !board) return;
-  const svgRect = svg.getBoundingClientRect();
-  let pathsHtml = "";
-
-  Object.keys(st.links).forEach(function(lKey) {
-    const lIdx = parseInt(lKey, 10);
-    const origRIdx = st.links[lKey];
-    const dispPos = item.displayRightOrder.indexOf(origRIdx);
-    const leftEl = document.getElementById("match-L-" + qid + "-" + lIdx);
-    const rightEl = document.getElementById("match-R-" + qid + "-" + dispPos);
-    if (leftEl && rightEl && svgRect.width > 0) {
-      const lRect = leftEl.getBoundingClientRect();
-      const rRect = rightEl.getBoundingClientRect();
-      const x1 = 0;
-      const y1 = (lRect.top + lRect.height / 2) - svgRect.top;
-      const x2 = svgRect.width;
-      const y2 = (rRect.top + rRect.height / 2) - svgRect.top;
-      const cx1 = svgRect.width * 0.45;
-      const cx2 = svgRect.width * 0.55;
-      const color = strokeColors[lIdx] || "#0071e3";
-      pathsHtml +=
-        '<path d="M ' + x1 + " " + y1 + " C " + cx1 + " " + y1 + ", " + cx2 + " " + y2 + ", " + x2 + " " + y2 +
-        '" stroke="' + color + '" stroke-width="3.5" fill="none" stroke-linecap="round"/>' +
-        '<circle cx="' + x1 + '" cy="' + y1 + '" r="5" fill="' + color + '"/>' +
-        '<circle cx="' + x2 + '" cy="' + y2 + '" r="5" fill="' + color + '"/>';
-    }
-  });
-  svg.innerHTML = pathsHtml;
-}
-
-window.addEventListener("resize", function() {
-  questions.forEach(function(item) {
-    if (item.type === "match") {
-      refreshMatchUI(item.id);
-    }
-  });
-});
-
-/* 构建互动题型二：双盒归类题 HTML */
-function buildClassifyHtml(item) {
-  let rowsHtml = "";
-  item.items.forEach(function(sub, idx) {
-    rowsHtml +=
-      '<div class="classify-row">' +
-        '<div class="classify-text">' + sub.text + "</div>" +
-        '<div class="classify-btns">' +
-          '<button type="button" class="cls-btn" id="cls-desk-' + item.id + '-' + idx + '" onclick="onPickClassify(' + item.id + ',' + idx + ',\'desk\')">' + item.leftBtnLabel + "</button>" +
-          '<button type="button" class="cls-btn" id="cls-cab-' + item.id + '-' + idx + '" onclick="onPickClassify(' + item.id + ',' + idx + ',\'cabinet\')">' + item.rightBtnLabel + "</button>" +
-        "</div>" +
-      "</div>";
-  });
-
-  return (
-    '<div class="classify-list">' + rowsHtml + "</div>" +
-    '<div class="buckets-preview">' +
-      '<div class="bucket-box"><div class="bucket-title">' + item.leftBoxTitle + '</div><div id="bucket-desk-' + item.id + '" style="color:#6d28d9;font-weight:700;">暂未归入</div></div>' +
-      '<div class="bucket-box"><div class="bucket-title">' + item.rightBoxTitle + '</div><div id="bucket-cab-' + item.id + '" style="color:#0369a1;font-weight:700;">暂未归入</div></div>' +
-    "</div>"
-  );
-}
-
-function onPickClassify(qid, itemIdx, bucket) {
-  playSoundClick();
-  classifyState[qid][itemIdx] = bucket;
-  const deskBtn = document.getElementById("cls-desk-" + qid + "-" + itemIdx);
-  const cabBtn = document.getElementById("cls-cab-" + qid + "-" + itemIdx);
-  deskBtn.className = bucket === "desk" ? "cls-btn picked-desk" : "cls-btn";
-  cabBtn.className = bucket === "cabinet" ? "cls-btn picked-cabinet" : "cls-btn";
-
-  const deskList = [];
-  const cabList = [];
-  const st = classifyState[qid];
-  Object.keys(st).forEach(function(k) {
-    const label = "第" + ["①", "②", "③", "④"][parseInt(k, 10)] + "项";
-    if (st[k] === "desk") deskList.push(label);
-    if (st[k] === "cabinet") cabList.push(label);
-  });
-  document.getElementById("bucket-desk-" + qid).innerText = deskList.length > 0 ? deskList.join("、") : "暂未归入";
-  document.getElementById("bucket-cab-" + qid).innerText = cabList.length > 0 ? cabList.join("、") : "暂未归入";
-  updateProgressUI();
-}
-
-/* 构建互动题型三：实战题 HTML */
-function buildRoleplayHtml(item) {
-  let stepsHtml = "";
-  item.steps.forEach(function(step, sIdx) {
-    let choicesHtml = "";
-    step.choices.forEach(function(cText, cIdx) {
-      choicesHtml +=
-        '<button type="button" class="rp-choice-btn" id="rp-' + item.id + '-' + sIdx + '-' + cIdx + '" onclick="onPickRoleplay(' + item.id + ',' + sIdx + ',' + cIdx + ')">' +
-          cText +
-        "</button>";
-    });
-    stepsHtml +=
-      '<div class="rp-step">' +
-        '<div class="rp-step-title">' + step.title + "</div>" +
-        '<div class="rp-choices">' + choicesHtml + "</div>" +
-      "</div>";
-  });
-
-  return '<div class="customer-bubble">' + item.dialogue + "</div>" + stepsHtml;
-}
-
-function onPickRoleplay(qid, stepIdx, choiceIdx) {
-  playSoundClick();
-  roleplayState[qid][stepIdx] = choiceIdx;
-  const item = questions.find(function(q) { return q.id === qid; });
-  item.steps[stepIdx].choices.forEach(function(_, cIdx) {
-    const btn = document.getElementById("rp-" + qid + "-" + stepIdx + "-" + cIdx);
-    btn.className = (cIdx === choiceIdx) ? "rp-choice-btn rp-selected" : "rp-choice-btn";
-  });
-  updateProgressUI();
-}
-
-function onOptionSelect(qid) {
-  playSoundClick();
-  updateProgressUI();
-  const item = questions.find(function(q) { return q.id === qid; });
-  if (quizMode === "instant" && item && item.type === "single") {
-    verifyOneQuestion(qid);
-  }
-}
-
-/* 统一评分函数 */
-function evaluateQuestion(item) {
-  let qScore = 0;
-  let userSummary = "";
-  let correctSummary = "";
-
-  if (item.type === "single") {
-    const inputs = document.querySelectorAll('input[name="q' + item.id + '"]:checked');
-    const selected = Array.from(inputs).map(function(el) { return el.value; });
-    if (selected.length === 1 && selected[0] === item.ans[0]) {
-      qScore = item.points;
-    }
-    userSummary = selected.length > 0 ? selected.join("") : "未作答";
-    correctSummary = item.ans.join("");
-  } else if (item.type === "multi") {
-    const inputs = document.querySelectorAll('input[name="q' + item.id + '"]:checked');
-    const selected = Array.from(inputs).map(function(el) { return el.value; });
-    if (selected.length > 0) {
-      let hasWrong = false;
-      selected.forEach(function(val) {
-        if (item.ans.indexOf(val) === -1) {
-          hasWrong = true;
-        }
-      });
-      if (!hasWrong) {
-        qScore = selected.length;
-      }
-    }
-    userSummary = selected.length > 0 ? selected.join("") : "未作答";
-    correctSummary = item.ans.join("");
-  } else if (item.type === "match") {
-    const st = matchState[item.id];
-    let rightPairs = 0;
-    const totalPairs = item.leftItems.length;
-    for (let i = 0; i < totalPairs; i++) {
-      if (st.links.hasOwnProperty(i) && st.links[i] === i) {
-        rightPairs += 1;
-      }
-    }
-    qScore = rightPairs;
-    userSummary = "连对 " + rightPairs + " / " + totalPairs + " 组";
-    correctSummary = "左①至④分别对应专属定位与场景（详见下方解析）";
-  } else if (item.type === "classify") {
-    const st = classifyState[item.id];
-    let rightCount = 0;
-    item.items.forEach(function(sub, idx) {
-      if (st[idx] === sub.target) {
-        rightCount += 1;
-      }
-    });
-    qScore = rightCount;
-    userSummary = "归对 " + rightCount + " / " + item.items.length + " 项";
-    correctSummary = "第①、③项归入左盒，第②、④项归入右盒";
-  } else if (item.type === "roleplay") {
-    const st = roleplayState[item.id];
-    let rightSteps = 0;
-    const ansLetters = [];
-    item.steps.forEach(function(step, sIdx) {
-      ansLetters.push(["A", "B", "C"][step.ans]);
-      if (st[sIdx] === step.ans) {
-        rightSteps += 1;
-      }
-    });
-    qScore = rightSteps;
-    userSummary = "选对 " + rightSteps + " / " + item.steps.length + " 步";
-    correctSummary = "三步正确组合为 " + ansLetters.join(" - ");
-  }
-
-  return { qScore: qScore, userSummary: userSummary, correctSummary: correctSummary };
-}
-
-function showQuestionFeedback(item, result) {
-  const fb = document.getElementById("fb" + item.id);
-  const card = document.getElementById("card" + item.id);
-  const qScore = result.qScore;
-  fb.style.display = "block";
-
-  if (qScore === item.points) {
-    card.setAttribute("data-perfect", "true");
-    fb.className = "feedback correct";
-    fb.innerHTML =
-      "<div><strong>✅ 回答正确（+" + qScore + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div>" +
-      '<div class="exp-text">解析：' + item.exp + "</div>";
-  } else if (qScore > 0) {
-    card.setAttribute("data-perfect", "false");
-    fb.className = "feedback partial";
-    fb.innerHTML =
-      "<div><strong>⚠️ 部分正确（+" + qScore + "分 / 满分" + item.points + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div>" +
-      '<div class="exp-text">解析：' + item.exp + "</div>";
-  } else {
-    card.setAttribute("data-perfect", "false");
-    fb.className = "feedback wrong";
-    fb.innerHTML =
-      "<div><strong>❌ 未得分（0分 / 满分" + item.points + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div>" +
-      '<div class="exp-text">解析：' + item.exp + "</div>";
-  }
-}
-
-/* 模式一：单题立即验证 */
-function verifyOneQuestion(qid) {
-  const item = questions.find(function(q) { return q.id === qid; });
-  if (!item) return;
-  const res = evaluateQuestion(item);
-  showQuestionFeedback(item, res);
-  if (res.qScore === item.points) {
-    playSoundCorrect();
-  } else {
-    playSoundWrong();
-  }
-}
-
-/* 整卷提交计分与排行榜记录 */
-function gradeQuiz(saveToLb) {
-  quizSubmitted = true;
-  let totalScore = 0;
-  let fullCorrectCount = 0;
-  let wrongIds = [];
-
-  questions.forEach(function(item) {
-    const res = evaluateQuestion(item);
-    totalScore += res.qScore;
-    showQuestionFeedback(item, res);
-    if (res.qScore === item.points) {
-      fullCorrectCount += 1;
-    } else {
-      wrongIds.push(item.id);
-    }
-  });
-
-  const banner = document.getElementById("scoreBanner");
-  const scoreMain = document.getElementById("scoreMain");
-  const scoreSub = document.getElementById("scoreSub");
-  const btnFilter = document.getElementById("btnFilterWrong");
-  const nameInput = document.getElementById("username").value.trim();
-  const name = nameInput || "匿名同事";
-  const durationText = formatDuration(elapsedSeconds);
-
-  banner.style.display = "block";
-  scoreMain.innerText = name + " 的测试总分：" + totalScore + " / 100 分（用时 " + durationText + "）";
-
-  if (wrongIds.length === 0) {
-    scoreSub.innerText = "🎉 太棒了！全部30题均拿满分！";
-    btnFilter.style.display = "none";
-    celebrateFullScore();
-  } else {
-    scoreSub.innerText = "满分题目：" + fullCorrectCount + " 题 | 错题及未满分的题目（共 " + wrongIds.length + " 题）：第 " + wrongIds.join("、") + " 题";
-    btnFilter.style.display = "inline-block";
-    playSoundSubmit();
-  }
-
-  if (saveToLb) {
-    saveScoreToLeaderboard(name, totalScore, elapsedSeconds);
-    document.getElementById("leaderboardBox").style.display = "block";
-    renderLeaderboard();
-  }
-
-  showingWrongOnly = false;
-  applyFilterView();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-/* 排行榜逻辑（按先分数从高到低，再按答题用时从短到长排序） */
-function getLeaderboardData() {
-  try {
-    const raw = localStorage.getItem(LB_STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch (e) {
-    return [];
-  }
-}
-
-function saveScoreToLeaderboard(name, score, durationSec) {
-  const list = getLeaderboardData();
-  const now = new Date();
-  const pad = function(n) { return n < 10 ? "0" + n : "" + n; };
-  const timeStr = (now.getMonth() + 1) + "-" + pad(now.getDate()) + " " + pad(now.getHours()) + ":" + pad(now.getMinutes());
-  list.push({
-    name: name,
-    score: score,
-    durationSec: durationSec,
-    durationStr: formatDuration(durationSec),
-    time: timeStr,
-    ts: now.getTime()
-  });
-  list.sort(function(a, b) {
-    if (b.score !== a.score) return b.score - a.score;
-    const durA = typeof a.durationSec === "number" ? a.durationSec : 999999;
-    const durB = typeof b.durationSec === "number" ? b.durationSec : 999999;
-    if (durA !== durB) return durA - durB;
-    return a.ts - b.ts;
-  });
-  try {
-    localStorage.setItem(LB_STORAGE_KEY, JSON.stringify(list));
-  } catch (e) {}
-}
-
-function renderLeaderboard() {
-  const list = getLeaderboardData();
-  const lbContent = document.getElementById("lbContent");
-  const note = document.getElementById("lbPrivacyNote");
-  const adminBtn = document.getElementById("adminBtn");
-  const exportBtn = document.getElementById("exportCsvBtn");
-  const clearBtn = document.getElementById("clearLbBtn");
-
-  if (isAdmin) {
-    note.innerText = "管理员模式：已解锁全部 " + list.length + " 条作答排名";
-    adminBtn.innerText = "退出管理员视图";
-    exportBtn.style.display = "inline-block";
-    clearBtn.style.display = "inline-block";
-  } else {
-    note.innerText = "隐私保护中：仅公开展示前10名（管理员可查看全部）";
-    adminBtn.innerText = "🔒 管理员查看全部";
-    exportBtn.style.display = "none";
-    clearBtn.style.display = "none";
-  }
-
-  if (list.length === 0) {
-    lbContent.innerHTML = '<div style="padding:14px 0;color:#6b7280;">暂无成绩记录，提交试卷后将按“先得分、后用时”自动生成排名</div>';
-    return;
-  }
-
-  const displayList = isAdmin ? list : list.slice(0, 10);
-  let rowsHtml = "";
-  displayList.forEach(function(item, idx) {
-    const rankNum = idx + 1;
-    let rankBadgeClass = "";
-    if (rankNum === 1) rankBadgeClass = "rank-1";
-    else if (rankNum === 2) rankBadgeClass = "rank-2";
-    else if (rankNum === 3) rankBadgeClass = "rank-3";
-
-    const durText = item.durationStr || formatDuration(item.durationSec || 0);
-
-    rowsHtml +=
-      "<tr>" +
-        '<td><span class="rank-badge ' + rankBadgeClass + '">' + rankNum + "</span></td>" +
-        "<td><strong>" + item.name + "</strong></td>" +
-        '<td style="color:#0071e3;"><strong>' + item.score + " 分</strong></td>" +
-        '<td style="color:#047857;font-weight:700;">⏱️ ' + durText + "</td>" +
-        '<td style="color:#6b7280;font-size:14px;">' + item.time + "</td>" +
-      "</tr>";
-  });
-
-  lbContent.innerHTML =
-    '<table class="lb-table">' +
-      "<thead><tr><th>名次</th><th>姓名</th><th>得分</th><th>答题用时</th><th>提交时间</th></tr></thead>" +
-      "<tbody>" + rowsHtml + "</tbody>" +
-    "</table>";
-}
-
-function toggleLeaderboard() {
-  playSoundClick();
-  const box = document.getElementById("leaderboardBox");
-  if (box.style.display === "block") {
-    box.style.display = "none";
-  } else {
-    box.style.display = "block";
-    renderLeaderboard();
-  }
-}
-
-function toggleAdminMode() {
-  if (isAdmin) {
-    isAdmin = false;
-    renderLeaderboard();
-    return;
-  }
-  const pwd = prompt("请输入管理员口令查看完整排名（默认口令：8888）：");
-  if (pwd === ADMIN_PASS) {
-    isAdmin = true;
-    renderLeaderboard();
-  } else if (pwd !== null) {
-    alert("口令不正确，仅展示前10名");
-  }
-}
-
-function exportLeaderboardCSV() {
-  const list = getLeaderboardData();
-  if (list.length === 0) return;
-  let csv = "\uFEFF名次,姓名,得分,答题用时,用时秒数,提交时间\n";
-  list.forEach(function(item, i) {
-    const durText = item.durationStr || formatDuration(item.durationSec || 0);
-    csv += (i + 1) + "," + item.name + "," + item.score + "," + durText + "," + (item.durationSec || 0) + "," + item.time + "\n";
-  });
-  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "Mac测试卷全部排名.csv";
-  a.click();
-}
-
-function clearLeaderboard() {
-  if (confirm("确定要清空所有排行榜记录吗？")) {
-    localStorage.removeItem(LB_STORAGE_KEY);
-    renderLeaderboard();
-  }
-}
-
-function filterByCategory(cat) {
-  currentCategory = cat;
-  playSoundClick();
-  document.querySelectorAll(".legend-item").forEach(function(el) {
-    el.classList.remove("active-cat");
-  });
-  document.getElementById("filter-" + cat).classList.add("active-cat");
-  applyFilterView();
-}
-
-function toggleWrongOnly() {
-  showingWrongOnly = !showingWrongOnly;
-  playSoundClick();
-  applyFilterView();
-}
-
-function applyFilterView() {
-  const btnFilter = document.getElementById("btnFilterWrong");
-  btnFilter.innerText = showingWrongOnly ? "显示全部题目" : "只看错题与解析";
-
-  const catKeys = ["diff", "mem", "scene", "ind", "acc"];
-  catKeys.forEach(function(catKey) {
-    const section = document.getElementById("section-" + catKey);
-    const matchSectionCat = (currentCategory === "all" || currentCategory === catKey);
-    if (!matchSectionCat) {
-      section.style.display = "none";
-      return;
-    }
-
-    let visibleCount = 0;
-    const catQuestions = questions.filter(function(q) { return q.cat === catKey; });
-    catQuestions.forEach(function(item) {
-      const card = document.getElementById("card" + item.id);
-      const matchWrong = (!showingWrongOnly || card.getAttribute("data-perfect") !== "true");
-      if (matchWrong) {
-        card.style.display = "block";
-        visibleCount += 1;
-      } else {
-        card.style.display = "none";
-      }
-    });
-    section.style.display = visibleCount > 0 ? "block" : "none";
-  });
-
-  setTimeout(function() {
-    questions.forEach(function(item) {
-      if (item.type === "match") {
-        refreshMatchUI(item.id);
-      }
-    });
-  }, 50);
-}
-
-function resetQuiz() {
-  showingWrongOnly = false;
-  currentCategory = "all";
-  playSoundClick();
-  document.querySelectorAll(".legend-item").forEach(function(el) {
-    el.classList.remove("active-cat");
-  });
-  document.getElementById("filter-all").classList.add("active-cat");
-  document.getElementById("scoreBanner").style.display = "none";
-  document.getElementById("btnFilterWrong").style.display = "none";
-  renderQuiz();
-  startQuizTimer();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-renderQuiz();
-startQuizTimer();
-</script>
-</body>
-</html>
+  updateProgress

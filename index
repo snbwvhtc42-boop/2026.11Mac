@@ -6,291 +6,51 @@
 <title>在售Mac全系产品与销售推荐测试卷</title>
 <style>
   * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: linear-gradient(135deg, #eef2f7 0%, #e4ebf5 100%);
-    color: #1d1d1f;
-    margin: 0;
-    padding: 28px 16px;
-    line-height: 1.65;
-    font-size: 18px;
-  }
-  .container {
-    max-width: 1020px;
-    margin: 0 auto;
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 36px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    position: relative;
-    z-index: 2;
-  }
-  .hero-header {
-    background: linear-gradient(120deg, #1d1d1f 0%, #2c3e50 50%, #0071e3 100%);
-    color: #ffffff;
-    padding: 28px 26px;
-    border-radius: 18px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 20px rgba(0, 113, 227, 0.18);
-  }
-  .hero-header h1 {
-    font-size: 30px;
-    margin: 0 0 10px 0;
-    letter-spacing: 0.5px;
-  }
-  .hero-header .subtitle {
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 16px;
-    margin: 0;
-  }
-  .control-panel {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
-    padding: 16px 20px;
-    background: #f5f7fa;
-    border-radius: 14px;
-    border: 1px solid #e2e8f0;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .control-group {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-  .control-panel label {
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #1e293b;
-  }
-  .control-panel input[type="text"] {
-    padding: 9px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 9px;
-    font-size: 17px;
-    background: #ffffff;
-    outline: none;
-    width: 180px;
-  }
-  .control-panel input[type="text"]:focus {
-    border-color: #0071e3;
-    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
-  }
-  .mode-switch {
-    display: inline-flex;
-    background: #e2e8f0;
-    padding: 4px;
-    border-radius: 10px;
-    gap: 4px;
-  }
-  .mode-btn {
-    padding: 8px 14px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    background: transparent;
-    color: #475569;
-    transition: all 0.15s;
-  }
-  .mode-btn.active {
-    background: #0071e3;
-    color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 113, 227, 0.25);
-  }
-  .top-tool-btn {
-    padding: 8px 14px;
-    border-radius: 9px;
-    border: 1px solid #cbd5e1;
-    background: #ffffff;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #334155;
-  }
-  .top-tool-btn:hover {
-    background: #f1f5f9;
-  }
-  .sticky-status-bar {
-    position: sticky;
-    top: 10px;
-    z-index: 50;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(10px);
-    border: 1px solid #cbd5e1;
-    border-radius: 14px;
-    padding: 12px 20px;
-    margin-bottom: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  }
-  .progress-info {
-    font-size: 16px;
-    font-weight: 700;
-    color: #1e293b;
-    white-space: nowrap;
-  }
-  .progress-track {
-    flex: 1;
-    height: 10px;
-    background: #e2e8f0;
-    border-radius: 999px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    width: 0%;
-    background: linear-gradient(90deg, #0071e3 0%, #10b981 100%);
-    transition: width 0.25s ease;
-  }
-  .timer-badge {
-    font-size: 17px;
-    font-weight: 800;
-    color: #0071e3;
-    background: #eff6ff;
-    border: 1px solid #bfdbfe;
-    padding: 4px 14px;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-  .leaderboard-box {
-    display: none;
-    margin-bottom: 24px;
-    padding: 22px;
-    border-radius: 16px;
-    background: #fffdf9;
-    border: 2px solid #fde68a;
-    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.08);
-  }
-  .lb-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fde68a;
-  }
-  .lb-title {
-    font-size: 20px;
-    font-weight: 800;
-    color: #92400e;
-  }
-  .lb-privacy-note {
-    font-size: 14px;
-    color: #b45309;
-    background: #fef3c7;
-    padding: 4px 10px;
-    border-radius: 6px;
-  }
-  .lb-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 16px;
-    margin-top: 8px;
-  }
-  .lb-table th, .lb-table td {
-    padding: 10px 12px;
-    text-align: left;
-    border-bottom: 1px solid #f3f4f6;
-  }
-  .lb-table th {
-    color: #6b7280;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  .rank-badge {
-    display: inline-block;
-    min-width: 28px;
-    text-align: center;
-    font-weight: 800;
-    border-radius: 6px;
-    padding: 2px 6px;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: linear-gradient(135deg, #eef2f7 0%, #e4ebf5 100%); color: #1d1d1f; margin: 0; padding: 28px 16px; line-height: 1.65; font-size: 18px; }
+  .container { max-width: 1020px; margin: 0 auto; background: #ffffff; border-radius: 22px; padding: 36px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08); position: relative; z-index: 2; }
+  .hero-header { background: linear-gradient(120deg, #1d1d1f 0%, #2c3e50 50%, #0071e3 100%); color: #ffffff; padding: 28px 26px; border-radius: 18px; text-align: center; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(0, 113, 227, 0.18); }
+  .hero-header h1 { font-size: 30px; margin: 0 0 10px 0; letter-spacing: 0.5px; }
+  .hero-header .subtitle { color: rgba(255, 255, 255, 0.92); font-size: 16px; margin: 0; }
+  .control-panel { display: flex; gap: 16px; margin-bottom: 16px; padding: 16px 20px; background: #f5f7fa; border-radius: 14px; border: 1px solid #e2e8f0; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+  .control-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .control-panel label { font-size: 17px; font-weight: 600; display: flex; align-items: center; gap: 8px; color: #1e293b; }
+  .control-panel input[type="text"] { padding: 9px 14px; border: 1px solid #cbd5e1; border-radius: 9px; font-size: 17px; background: #ffffff; outline: none; width: 180px; }
+  .control-panel input[type="text"]:focus { border-color: #0071e3; box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15); }
+  .mode-switch { display: inline-flex; background: #e2e8f0; padding: 4px; border-radius: 10px; gap: 4px; }
+  .mode-btn { padding: 8px 14px; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: #475569; transition: all 0.15s; }
+  .mode-btn.active { background: #0071e3; color: #ffffff; box-shadow: 0 2px 6px rgba(0, 113, 227, 0.25); }
+  .top-tool-btn { padding: 8px 14px; border-radius: 9px; border: 1px solid #cbd5e1; background: #ffffff; font-size: 15px; font-weight: 600; cursor: pointer; color: #334155; }
+  .top-tool-btn:hover { background: #f1f5f9; }
+  .sticky-status-bar { position: sticky; top: 10px; z-index: 50; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); border: 1px solid #cbd5e1; border-radius: 14px; padding: 12px 20px; margin-bottom: 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06); }
+  .progress-info { font-size: 16px; font-weight: 700; color: #1e293b; white-space: nowrap; }
+  .progress-track { flex: 1; height: 10px; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+  .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #0071e3 0%, #10b981 100%); transition: width 0.25s ease; }
+  .timer-badge { font-size: 17px; font-weight: 800; color: #0071e3; background: #eff6ff; border: 1px solid #bfdbfe; padding: 4px 14px; border-radius: 999px; white-space: nowrap; }
+  .leaderboard-box { display: none; margin-bottom: 24px; padding: 22px; border-radius: 16px; background: #fffdf9; border: 2px solid #fde68a; box-shadow: 0 4px 16px rgba(245, 158, 11, 0.08); }
+  .lb-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #fde68a; }
+  .lb-title { font-size: 20px; font-weight: 800; color: #92400e; }
+  .lb-privacy-note { font-size: 14px; color: #b45309; background: #fef3c7; padding: 4px 10px; border-radius: 6px; }
+  .lb-table { width: 100%; border-collapse: collapse; font-size: 16px; margin-top: 8px; }
+  .lb-table th, .lb-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #f3f4f6; }
+  .lb-table th { color: #6b7280; font-weight: 600; font-size: 15px; }
+  .rank-badge { display: inline-block; min-width: 28px; text-align: center; font-weight: 800; border-radius: 6px; padding: 2px 6px; }
   .rank-1 { background: #fef08a; color: #854d0e; }
   .rank-2 { background: #e2e8f0; color: #334155; }
   .rank-3 { background: #fed7aa; color: #9a3412; }
-  .legend-bar {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 24px;
-    padding: 14px;
-    background: #f8f9fb;
-    border-radius: 14px;
-    border: 1px solid #e5e8ef;
-  }
-  .legend-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 14px;
-    border-radius: 999px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.15s, box-shadow 0.15s;
-    border: 2px solid transparent;
-  }
-  .legend-item:hover {
-    transform: translateY(-1px);
-  }
-  .legend-item.active-cat {
-    border-color: #1d1d1f;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  }
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .section-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 20px;
-    border-radius: 14px;
-    margin-top: 32px;
-    margin-bottom: 18px;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-  }
+  .legend-bar { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 24px; padding: 14px; background: #f8f9fb; border-radius: 14px; border: 1px solid #e5e8ef; }
+  .legend-item { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; font-size: 15px; font-weight: 600; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; border: 2px solid transparent; }
+  .legend-item:hover { transform: translateY(-1px); }
+  .legend-item.active-cat { border-color: #1d1d1f; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .section-banner { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-radius: 14px; margin-top: 32px; margin-bottom: 18px; color: #ffffff; font-weight: 700; font-size: 20px; }
   .banner-diff { background: linear-gradient(90deg, #0066cc 0%, #3b82f6 100%); }
   .banner-mem  { background: linear-gradient(90deg, #6d28d9 0%, #8b5cf6 100%); }
   .banner-scene{ background: linear-gradient(90deg, #047857 0%, #10b981 100%); }
   .banner-ind  { background: linear-gradient(90deg, #b45309 0%, #f59e0b 100%); }
   .banner-acc  { background: linear-gradient(90deg, #be185d 0%, #ec4899 100%); }
-  .section-desc {
-    font-size: 15px;
-    font-weight: 500;
-    opacity: 0.95;
-  }
-  .question-card {
-    padding: 20px 22px;
-    margin-bottom: 18px;
-    border-radius: 14px;
-    border: 1px solid #e5e7eb;
-    border-left-width: 6px;
-    transition: box-shadow 0.2s;
-  }
-  .question-card:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  }
+  .section-desc { font-size: 15px; font-weight: 500; opacity: 0.95; }
+  .question-card { padding: 20px 22px; margin-bottom: 18px; border-radius: 14px; border: 1px solid #e5e7eb; border-left-width: 6px; transition: box-shadow 0.2s; }
+  .question-card:hover { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06); }
   .cat-diff { background: #f4f9ff; border-color: #cfe4ff; border-left-color: #0071e3; }
   .badge-diff { background: #d8ebff; color: #0055b3; }
   .cat-mem { background: #faf5ff; border-color: #e9d5ff; border-left-color: #8b5cf6; }
@@ -301,129 +61,27 @@
   .badge-ind { background: #fef3c7; color: #b45309; }
   .cat-acc { background: #fff5f8; border-color: #ffd6e4; border-left-color: #ec4899; }
   .badge-acc { background: #fce7f3; color: #be185d; }
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-  .badge-group {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .badge {
-    display: inline-block;
-    padding: 3px 12px;
-    border-radius: 999px;
-    font-size: 14px;
-    font-weight: 700;
-  }
+  .card-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .badge-group { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .badge { display: inline-block; padding: 3px 12px; border-radius: 999px; font-size: 14px; font-weight: 700; }
   .badge-type-single   { background: #e0f2fe; color: #0369a1; }
   .badge-type-multi    { background: #f3e8ff; color: #7e22ce; }
   .badge-type-match    { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
   .badge-type-classify { background: #fae8ff; color: #a21caf; border: 1px solid #f0abfc; }
   .badge-type-roleplay { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
-  .question-title {
-    font-weight: 700;
-    margin-bottom: 14px;
-    font-size: 19px;
-    color: #111827;
-  }
-  .options label {
-    display: flex;
-    align-items: center;
-    padding: 10px 14px;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 17px;
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    transition: all 0.15s;
-  }
-  .options label:hover {
-    background: #ffffff;
-    border-color: #94a3b8;
-    transform: translateX(2px);
-  }
-  .options input {
-    margin-right: 12px;
-    transform: scale(1.3);
-    accent-color: #0071e3;
-  }
-  .match-hint {
-    font-size: 15px;
-    color: #475569;
-    margin-bottom: 12px;
-    background: rgba(255,255,255,0.8);
-    padding: 6px 12px;
-    border-radius: 8px;
-    display: inline-block;
-  }
-  .match-board {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 80px 1.15fr;
-    gap: 0;
-    align-items: stretch;
-    margin-bottom: 10px;
-  }
-  .match-col {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    z-index: 2;
-  }
-  .match-svg-wrap {
-    position: relative;
-    width: 80px;
-    z-index: 1;
-  }
-  .match-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    pointer-events: none;
-  }
-  .match-item {
-    background: #ffffff;
-    border: 2px solid #cbd5e1;
-    border-radius: 12px;
-    padding: 12px 14px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    min-height: 68px;
-  }
-  .match-item:hover {
-    border-color: #0071e3;
-    background: #f8fbff;
-  }
-  .match-item.active-pick {
-    border-color: #0071e3;
-    background: #eff6ff;
-    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.22);
-  }
-  .match-tag {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 700;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
+  .question-title { font-weight: 700; margin-bottom: 14px; font-size: 19px; color: #111827; }
+  .options label { display: flex; align-items: center; padding: 10px 14px; margin-bottom: 8px; border-radius: 10px; cursor: pointer; font-size: 17px; background: rgba(255, 255, 255, 0.92); border: 1px solid rgba(0, 0, 0, 0.08); transition: all 0.15s; }
+  .options label:hover { background: #ffffff; border-color: #94a3b8; transform: translateX(2px); }
+  .options input { margin-right: 12px; transform: scale(1.3); accent-color: #0071e3; }
+  .match-hint { font-size: 15px; color: #475569; margin-bottom: 12px; background: rgba(255,255,255,0.8); padding: 6px 12px; border-radius: 8px; display: inline-block; }
+  .match-board { position: relative; display: grid; grid-template-columns: 1fr 80px 1.15fr; gap: 0; align-items: stretch; margin-bottom: 10px; }
+  .match-col { display: flex; flex-direction: column; gap: 12px; z-index: 2; }
+  .match-svg-wrap { position: relative; width: 80px; z-index: 1; }
+  .match-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+  .match-item { background: #ffffff; border: 2px solid #cbd5e1; border-radius: 12px; padding: 12px 14px; font-size: 16px; cursor: pointer; transition: all 0.15s; display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 68px; }
+  .match-item:hover { border-color: #0071e3; background: #f8fbff; }
+  .match-item.active-pick { border-color: #0071e3; background: #eff6ff; box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.22); }
+  .match-tag { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 13px; font-weight: 700; white-space: nowrap; flex-shrink: 0; }
   .pair-color-0 { border-color: #0071e3 !important; background: #eff6ff !important; }
   .pair-tag-0   { background: #0071e3; color: #ffffff; }
   .pair-color-1 { border-color: #10b981 !important; background: #ecfdf5 !important; }
@@ -432,175 +90,33 @@
   .pair-tag-2   { background: #8b5cf6; color: #ffffff; }
   .pair-color-3 { border-color: #f59e0b !important; background: #fffbeb !important; }
   .pair-tag-3   { background: #d97706; color: #ffffff; }
-  .classify-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-  .classify-row {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .classify-text {
-    font-size: 16.5px;
-    font-weight: 600;
-    color: #1e293b;
-    flex: 1;
-    min-width: 240px;
-  }
-  .classify-btns {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .cls-btn {
-    padding: 7px 14px;
-    border-radius: 8px;
-    border: 2px solid #cbd5e1;
-    background: #f8fafc;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #334155;
-    transition: all 0.15s;
-  }
-  .cls-btn.picked-desk {
-    border-color: #7c3aed;
-    background: #ede9fe;
-    color: #5b21b6;
-  }
-  .cls-btn.picked-cabinet {
-    border-color: #0284c7;
-    background: #e0f2fe;
-    color: #0369a1;
-  }
-  .buckets-preview {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .bucket-box {
-    padding: 12px 14px;
-    border-radius: 10px;
-    font-size: 15px;
-    background: rgba(255,255,255,0.85);
-    border: 1px dashed #94a3b8;
-  }
-  .bucket-title {
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: #334155;
-  }
-  .customer-bubble {
-    background: #fffbeb;
-    border: 2px solid #fcd34d;
-    border-radius: 14px;
-    padding: 14px 18px;
-    margin-bottom: 14px;
-    font-size: 16.5px;
-    color: #78350f;
-    font-weight: 600;
-  }
-  .rp-step {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 12px 16px;
-    margin-bottom: 10px;
-  }
-  .rp-step-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #b45309;
-    margin-bottom: 8px;
-  }
-  .rp-choices {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .rp-choice-btn {
-    text-align: left;
-    padding: 9px 14px;
-    border-radius: 9px;
-    border: 2px solid #e2e8f0;
-    background: #f8fafc;
-    font-size: 16px;
-    cursor: pointer;
-    color: #1e293b;
-    transition: all 0.15s;
-  }
-  .rp-choice-btn:hover {
-    background: #ffffff;
-    border-color: #94a3b8;
-  }
-  .rp-choice-btn.rp-selected {
-    border-color: #d97706;
-    background: #fef3c7;
-    color: #78350f;
-    font-weight: 700;
-  }
-  .verify-single-btn {
-    margin-top: 8px;
-    padding: 7px 16px;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 8px;
-    background: #0071e3;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-  }
+  .classify-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  .classify-row { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .classify-text { font-size: 16.5px; font-weight: 600; color: #1e293b; flex: 1; min-width: 240px; }
+  .classify-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cls-btn { padding: 7px 14px; border-radius: 8px; border: 2px solid #cbd5e1; background: #f8fafc; font-size: 15px; font-weight: 600; cursor: pointer; color: #334155; transition: all 0.15s; }
+  .cls-btn.picked-desk { border-color: #7c3aed; background: #ede9fe; color: #5b21b6; }
+  .cls-btn.picked-cabinet { border-color: #0284c7; background: #e0f2fe; color: #0369a1; }
+  .buckets-preview { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 8px; }
+  .bucket-box { padding: 12px 14px; border-radius: 10px; font-size: 15px; background: rgba(255,255,255,0.85); border: 1px dashed #94a3b8; }
+  .bucket-title { font-weight: 700; margin-bottom: 4px; color: #334155; }
+  .customer-bubble { background: #fffbeb; border: 2px solid #fcd34d; border-radius: 14px; padding: 14px 18px; margin-bottom: 14px; font-size: 16.5px; color: #78350f; font-weight: 600; }
+  .rp-step { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; }
+  .rp-step-title { font-size: 16px; font-weight: 700; color: #b45309; margin-bottom: 8px; }
+  .rp-choices { display: flex; flex-direction: column; gap: 8px; }
+  .rp-choice-btn { text-align: left; padding: 9px 14px; border-radius: 9px; border: 2px solid #e2e8f0; background: #f8fafc; font-size: 16px; cursor: pointer; color: #1e293b; transition: all 0.15s; }
+  .rp-choice-btn:hover { background: #ffffff; border-color: #94a3b8; }
+  .rp-choice-btn.rp-selected { border-color: #d97706; background: #fef3c7; color: #78350f; font-weight: 700; }
+  .verify-single-btn { margin-top: 8px; padding: 7px 16px; font-size: 15px; font-weight: 600; border-radius: 8px; background: #0071e3; color: #ffffff; border: none; cursor: pointer; }
   .verify-single-btn:hover { background: #005bb5; }
-  .reset-sub-btn {
-    margin-top: 8px;
-    margin-left: 8px;
-    padding: 7px 14px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
-    background: #e2e8f0;
-    color: #334155;
-    border: none;
-    cursor: pointer;
-  }
-  .feedback {
-    display: none;
-    margin-top: 14px;
-    padding: 12px 16px;
-    border-radius: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  .reset-sub-btn { margin-top: 8px; margin-left: 8px; padding: 7px 14px; font-size: 14px; font-weight: 600; border-radius: 8px; background: #e2e8f0; color: #334155; border: none; cursor: pointer; }
+  .feedback { display: none; margin-top: 14px; padding: 12px 16px; border-radius: 10px; font-size: 16px; line-height: 1.6; }
   .feedback.correct { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
   .feedback.partial { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
   .feedback.wrong { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
   .exp-text { margin-top: 6px; color: #1f2937; font-weight: 400; }
-  .actions {
-    margin-top: 34px;
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .actions button {
-    padding: 12px 28px;
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
+  .actions { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .actions button { padding: 12px 28px; border: none; border-radius: 10px; font-size: 17px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
   .btn-submit { background: linear-gradient(135deg, #0071e3 0%, #0055b3 100%); color: #ffffff; box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3); }
   .btn-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 113, 227, 0.4); }
   .btn-wrong { display: none; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
@@ -985,4 +501,338 @@ function onPickMatchRight(qid, dispPos, origRIdx) {
   st.links[st.pickedLeft] = origRIdx;
   st.pickedLeft = null;
   refreshMatchUI(qid);
-  updateProgress
+  updateProgressUI();
+}
+
+function clearMatchQuestion(qid) {
+  playSoundClick();
+  matchState[qid] = { pickedLeft: null, links: {} };
+  refreshMatchUI(qid);
+  document.getElementById("fb" + qid).style.display = "none";
+  updateProgressUI();
+}
+
+function refreshMatchUI(qid) {
+  const item = questions.find(function(q) { return q.id === qid; });
+  const st = matchState[qid];
+  const pairLabels = ["配对①", "配对②", "配对③", "配对④"];
+  const strokeColors = ["#0071e3", "#10b981", "#8b5cf6", "#d97706"];
+
+  item.leftItems.forEach(function(_, lIdx) {
+    const el = document.getElementById("match-L-" + qid + "-" + lIdx);
+    const tag = document.getElementById("match-Ltag-" + qid + "-" + lIdx);
+    if (!el || !tag) return;
+    el.className = "match-item";
+    tag.style.display = "none";
+    if (st.pickedLeft === lIdx) el.classList.add("active-pick");
+    if (st.links.hasOwnProperty(lIdx)) {
+      el.classList.add("pair-color-" + lIdx);
+      tag.className = "match-tag pair-tag-" + lIdx;
+      tag.innerText = pairLabels[lIdx];
+      tag.style.display = "inline-block";
+    }
+  });
+
+  item.displayRightOrder.forEach(function(origRIdx, dispPos) {
+    const el = document.getElementById("match-R-" + qid + "-" + dispPos);
+    const tag = document.getElementById("match-Rtag-" + qid + "-" + dispPos);
+    if (!el || !tag) return;
+    el.className = "match-item";
+    tag.style.display = "none";
+    Object.keys(st.links).forEach(function(lKey) {
+      if (st.links[lKey] === origRIdx) {
+        const cIdx = parseInt(lKey, 10);
+        el.classList.add("pair-color-" + cIdx);
+        tag.className = "match-tag pair-tag-" + cIdx;
+        tag.innerText = pairLabels[cIdx];
+        tag.style.display = "inline-block";
+      }
+    });
+  });
+
+  const svg = document.getElementById("match-svg-" + qid);
+  const board = document.getElementById("match-board-" + qid);
+  if (!svg || !board) return;
+  const svgRect = svg.getBoundingClientRect();
+  let pathsHtml = "";
+
+  Object.keys(st.links).forEach(function(lKey) {
+    const lIdx = parseInt(lKey, 10);
+    const origRIdx = st.links[lKey];
+    const dispPos = item.displayRightOrder.indexOf(origRIdx);
+    const leftEl = document.getElementById("match-L-" + qid + "-" + lIdx);
+    const rightEl = document.getElementById("match-R-" + qid + "-" + dispPos);
+    if (leftEl && rightEl && svgRect.width > 0) {
+      const lRect = leftEl.getBoundingClientRect();
+      const rRect = rightEl.getBoundingClientRect();
+      const x1 = 0; const y1 = (lRect.top + lRect.height / 2) - svgRect.top;
+      const x2 = svgRect.width; const y2 = (rRect.top + rRect.height / 2) - svgRect.top;
+      const cx1 = svgRect.width * 0.45; const cx2 = svgRect.width * 0.55;
+      const color = strokeColors[lIdx] || "#0071e3";
+      pathsHtml += '<path d="M ' + x1 + " " + y1 + " C " + cx1 + " " + y1 + ", " + cx2 + " " + y2 + ", " + x2 + " " + y2 + '" stroke="' + color + '" stroke-width="3.5" fill="none" stroke-linecap="round"/><circle cx="' + x1 + '" cy="' + y1 + '" r="5" fill="' + color + '"/><circle cx="' + x2 + '" cy="' + y2 + '" r="5" fill="' + color + '"/>';
+    }
+  });
+  svg.innerHTML = pathsHtml;
+}
+
+window.addEventListener("resize", function() {
+  questions.forEach(function(item) { if (item.type === "match") refreshMatchUI(item.id); });
+});
+
+function buildClassifyHtml(item) {
+  let rowsHtml = "";
+  item.items.forEach(function(sub, idx) {
+    rowsHtml += '<div class="classify-row"><div class="classify-text">' + sub.text + '</div><div class="classify-btns"><button type="button" class="cls-btn" id="cls-desk-' + item.id + '-' + idx + '" onclick="onPickClassify(' + item.id + ',' + idx + ',\'desk\')">' + item.leftBtnLabel + '</button><button type="button" class="cls-btn" id="cls-cab-' + item.id + '-' + idx + '" onclick="onPickClassify(' + item.id + ',' + idx + ',\'cabinet\')">' + item.rightBtnLabel + "</button></div></div>";
+  });
+  return '<div class="classify-list">' + rowsHtml + "</div>" + '<div class="buckets-preview"><div class="bucket-box"><div class="bucket-title">' + item.leftBoxTitle + '</div><div id="bucket-desk-' + item.id + '" style="color:#6d28d9;font-weight:700;">暂未归入</div></div><div class="bucket-box"><div class="bucket-title">' + item.rightBoxTitle + '</div><div id="bucket-cab-' + item.id + '" style="color:#0369a1;font-weight:700;">暂未归入</div></div></div>';
+}
+
+function onPickClassify(qid, itemIdx, bucket) {
+  playSoundClick();
+  classifyState[qid][itemIdx] = bucket;
+  const deskBtn = document.getElementById("cls-desk-" + qid + "-" + itemIdx);
+  const cabBtn = document.getElementById("cls-cab-" + qid + "-" + itemIdx);
+  deskBtn.className = bucket === "desk" ? "cls-btn picked-desk" : "cls-btn";
+  cabBtn.className = bucket === "cabinet" ? "cls-btn picked-cabinet" : "cls-btn";
+
+  const deskList = []; const cabList = []; const st = classifyState[qid];
+  Object.keys(st).forEach(function(k) {
+    const label = "第" + ["①", "②", "③", "④"][parseInt(k, 10)] + "项";
+    if (st[k] === "desk") deskList.push(label);
+    if (st[k] === "cabinet") cabList.push(label);
+  });
+  document.getElementById("bucket-desk-" + qid).innerText = deskList.length > 0 ? deskList.join("、") : "暂未归入";
+  document.getElementById("bucket-cab-" + qid).innerText = cabList.length > 0 ? cabList.join("、") : "暂未归入";
+  updateProgressUI();
+}
+
+function buildRoleplayHtml(item) {
+  let stepsHtml = "";
+  item.steps.forEach(function(step, sIdx) {
+    let choicesHtml = "";
+    step.choices.forEach(function(cText, cIdx) {
+      choicesHtml += '<button type="button" class="rp-choice-btn" id="rp-' + item.id + '-' + sIdx + '-' + cIdx + '" onclick="onPickRoleplay(' + item.id + ',' + sIdx + ',' + cIdx + ')">' + cText + "</button>";
+    });
+    stepsHtml += '<div class="rp-step"><div class="rp-step-title">' + step.title + '</div><div class="rp-choices">' + choicesHtml + "</div></div>";
+  });
+  return '<div class="customer-bubble">' + item.dialogue + "</div>" + stepsHtml;
+}
+
+function onPickRoleplay(qid, stepIdx, choiceIdx) {
+  playSoundClick();
+  roleplayState[qid][stepIdx] = choiceIdx;
+  const item = questions.find(function(q) { return q.id === qid; });
+  item.steps[stepIdx].choices.forEach(function(_, cIdx) {
+    document.getElementById("rp-" + qid + "-" + stepIdx + "-" + cIdx).className = (cIdx === choiceIdx) ? "rp-choice-btn rp-selected" : "rp-choice-btn";
+  });
+  updateProgressUI();
+}
+
+function onOptionSelect(qid) {
+  playSoundClick();
+  updateProgressUI();
+  const item = questions.find(function(q) { return q.id === qid; });
+  if (quizMode === "instant" && item && item.type === "single") verifyOneQuestion(qid);
+}
+
+function evaluateQuestion(item) {
+  let qScore = 0; let userSummary = ""; let correctSummary = "";
+  if (item.type === "single") {
+    const selected = Array.from(document.querySelectorAll('input[name="q' + item.id + '"]:checked')).map(function(el) { return el.value; });
+    if (selected.length === 1 && selected[0] === item.ans[0]) qScore = item.points;
+    userSummary = selected.length > 0 ? selected.join("") : "未作答"; correctSummary = item.ans.join("");
+  } else if (item.type === "multi") {
+    const selected = Array.from(document.querySelectorAll('input[name="q' + item.id + '"]:checked')).map(function(el) { return el.value; });
+    if (selected.length > 0) {
+      let hasWrong = false;
+      selected.forEach(function(val) { if (item.ans.indexOf(val) === -1) hasWrong = true; });
+      if (!hasWrong) qScore = selected.length;
+    }
+    userSummary = selected.length > 0 ? selected.join("") : "未作答"; correctSummary = item.ans.join("");
+  } else if (item.type === "match") {
+    const st = matchState[item.id]; let rightPairs = 0; const totalPairs = item.leftItems.length;
+    for (let i = 0; i < totalPairs; i++) { if (st.links.hasOwnProperty(i) && st.links[i] === i) rightPairs += 1; }
+    qScore = rightPairs; userSummary = "连对 " + rightPairs + " / " + totalPairs + " 组"; correctSummary = "左①至④分别对应专属定位与场景（详见下方解析）";
+  } else if (item.type === "classify") {
+    const st = classifyState[item.id]; let rightCount = 0;
+    item.items.forEach(function(sub, idx) { if (st[idx] === sub.target) rightCount += 1; });
+    qScore = rightCount; userSummary = "归对 " + rightCount + " / " + item.items.length + " 项"; correctSummary = "第①、③项归入左盒，第②、④项归入右盒";
+  } else if (item.type === "roleplay") {
+    const st = roleplayState[item.id]; let rightSteps = 0; const ansLetters = [];
+    item.steps.forEach(function(step, sIdx) { ansLetters.push(["A", "B", "C"][step.ans]); if (st[sIdx] === step.ans) rightSteps += 1; });
+    qScore = rightSteps; userSummary = "选对 " + rightSteps + " / " + item.steps.length + " 步"; correctSummary = "三步正确组合为 " + ansLetters.join(" - ");
+  }
+  return { qScore: qScore, userSummary: userSummary, correctSummary: correctSummary };
+}
+
+function showQuestionFeedback(item, result) {
+  const fb = document.getElementById("fb" + item.id);
+  const card = document.getElementById("card" + item.id);
+  const qScore = result.qScore;
+  fb.style.display = "block";
+  if (qScore === item.points) {
+    card.setAttribute("data-perfect", "true"); fb.className = "feedback correct";
+    fb.innerHTML = "<div><strong>✅ 回答正确（+" + qScore + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div><div class=\"exp-text\">解析：" + item.exp + "</div>";
+  } else if (qScore > 0) {
+    card.setAttribute("data-perfect", "false"); fb.className = "feedback partial";
+    fb.innerHTML = "<div><strong>⚠️ 部分正确（+" + qScore + "分 / 满分" + item.points + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div><div class=\"exp-text\">解析：" + item.exp + "</div>";
+  } else {
+    card.setAttribute("data-perfect", "false"); fb.className = "feedback wrong";
+    fb.innerHTML = "<div><strong>❌ 未得分（0分 / 满分" + item.points + "分）</strong> | 你的作答：" + result.userSummary + " | 标准答案：" + result.correctSummary + "</div><div class=\"exp-text\">解析：" + item.exp + "</div>";
+  }
+}
+
+function verifyOneQuestion(qid) {
+  const item = questions.find(function(q) { return q.id === qid; });
+  if (!item) return;
+  const res = evaluateQuestion(item);
+  showQuestionFeedback(item, res);
+  if (res.qScore === item.points) playSoundCorrect(); else playSoundWrong();
+}
+
+function gradeQuiz(saveToLb) {
+  quizSubmitted = true;
+  let totalScore = 0; let fullCorrectCount = 0; let wrongIds = [];
+  questions.forEach(function(item) {
+    const res = evaluateQuestion(item);
+    totalScore += res.qScore;
+    showQuestionFeedback(item, res);
+    if (res.qScore === item.points) fullCorrectCount += 1; else wrongIds.push(item.id);
+  });
+
+  const banner = document.getElementById("scoreBanner"); const scoreMain = document.getElementById("scoreMain");
+  const scoreSub = document.getElementById("scoreSub"); const btnFilter = document.getElementById("btnFilterWrong");
+  const nameInput = document.getElementById("username").value.trim();
+  const name = nameInput || "匿名同事"; const durationText = formatDuration(elapsedSeconds);
+
+  banner.style.display = "block";
+  scoreMain.innerText = name + " 的测试总分：" + totalScore + " / 100 分（用时 " + durationText + "）";
+
+  if (wrongIds.length === 0) {
+    scoreSub.innerText = "🎉 太棒了！全部30题均拿满分！";
+    btnFilter.style.display = "none"; celebrateFullScore();
+  } else {
+    scoreSub.innerText = "满分题目：" + fullCorrectCount + " 题 | 错题及未满分的题目（共 " + wrongIds.length + " 题）：第 " + wrongIds.join("、") + " 题";
+    btnFilter.style.display = "inline-block"; playSoundSubmit();
+  }
+
+  if (saveToLb) {
+    saveScoreToLeaderboard(name, totalScore, elapsedSeconds);
+    document.getElementById("leaderboardBox").style.display = "block";
+    renderLeaderboard();
+  }
+
+  showingWrongOnly = false; applyFilterView(); window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function getLeaderboardData() { try { const raw = localStorage.getItem(LB_STORAGE_KEY); return raw ? JSON.parse(raw) : []; } catch (e) { return []; } }
+
+function saveScoreToLeaderboard(name, score, durationSec) {
+  const list = getLeaderboardData(); const now = new Date();
+  const pad = function(n) { return n < 10 ? "0" + n : "" + n; };
+  const timeStr = (now.getMonth() + 1) + "-" + pad(now.getDate()) + " " + pad(now.getHours()) + ":" + pad(now.getMinutes());
+  list.push({ name: name, score: score, durationSec: durationSec, durationStr: formatDuration(durationSec), time: timeStr, ts: now.getTime() });
+  list.sort(function(a, b) {
+    if (b.score !== a.score) return b.score - a.score;
+    const durA = typeof a.durationSec === "number" ? a.durationSec : 999999;
+    const durB = typeof b.durationSec === "number" ? b.durationSec : 999999;
+    if (durA !== durB) return durA - durB;
+    return a.ts - b.ts;
+  });
+  try { localStorage.setItem(LB_STORAGE_KEY, JSON.stringify(list)); } catch (e) {}
+}
+
+function renderLeaderboard() {
+  const list = getLeaderboardData(); const lbContent = document.getElementById("lbContent");
+  const note = document.getElementById("lbPrivacyNote"); const adminBtn = document.getElementById("adminBtn");
+  const exportBtn = document.getElementById("exportCsvBtn"); const clearBtn = document.getElementById("clearLbBtn");
+
+  if (isAdmin) {
+    note.innerText = "管理员模式：已解锁全部 " + list.length + " 条作答排名";
+    adminBtn.innerText = "退出管理员视图"; exportBtn.style.display = "inline-block"; clearBtn.style.display = "inline-block";
+  } else {
+    note.innerText = "隐私保护中：仅公开展示前10名（管理员可查看全部）";
+    adminBtn.innerText = "🔒 管理员查看全部"; exportBtn.style.display = "none"; clearBtn.style.display = "none";
+  }
+
+  if (list.length === 0) { lbContent.innerHTML = '<div style="padding:14px 0;color:#6b7280;">暂无成绩记录，提交试卷后将按“先得分、后用时”自动生成排名</div>'; return; }
+  const displayList = isAdmin ? list : list.slice(0, 10);
+  let rowsHtml = "";
+  displayList.forEach(function(item, idx) {
+    const rankNum = idx + 1; let rankBadgeClass = "";
+    if (rankNum === 1) rankBadgeClass = "rank-1"; else if (rankNum === 2) rankBadgeClass = "rank-2"; else if (rankNum === 3) rankBadgeClass = "rank-3";
+    const durText = item.durationStr || formatDuration(item.durationSec || 0);
+    rowsHtml += "<tr><td><span class=\"rank-badge " + rankBadgeClass + "\">" + rankNum + "</span></td><td><strong>" + item.name + "</strong></td><td style=\"color:#0071e3;\"><strong>" + item.score + " 分</strong></td><td style=\"color:#047857;font-weight:700;\">⏱️ " + durText + "</td><td style=\"color:#6b7280;font-size:14px;\">" + item.time + "</td></tr>";
+  });
+  lbContent.innerHTML = '<table class="lb-table"><thead><tr><th>名次</th><th>姓名</th><th>得分</th><th>答题用时</th><th>提交时间</th></tr></thead><tbody>' + rowsHtml + "</tbody></table>";
+}
+
+function toggleLeaderboard() {
+  playSoundClick(); const box = document.getElementById("leaderboardBox");
+  if (box.style.display === "block") box.style.display = "none";
+  else { box.style.display = "block"; renderLeaderboard(); }
+}
+
+function toggleAdminMode() {
+  if (isAdmin) { isAdmin = false; renderLeaderboard(); return; }
+  const pwd = prompt("请输入管理员口令查看完整排名（默认口令：8888）：");
+  if (pwd === ADMIN_PASS) { isAdmin = true; renderLeaderboard(); } else if (pwd !== null) alert("口令不正确，仅展示前10名");
+}
+
+function exportLeaderboardCSV() {
+  const list = getLeaderboardData(); if (list.length === 0) return;
+  let csv = "\uFEFF名次,姓名,得分,答题用时,用时秒数,提交时间\n";
+  list.forEach(function(item, i) {
+    const durText = item.durationStr || formatDuration(item.durationSec || 0);
+    csv += (i + 1) + "," + item.name + "," + item.score + "," + durText + "," + (item.durationSec || 0) + "," + item.time + "\n";
+  });
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" }); const url = URL.createObjectURL(blob);
+  const a = document.createElement("a"); a.href = url; a.download = "Mac测试卷全部排名.csv"; a.click();
+}
+
+function clearLeaderboard() { if (confirm("确定要清空所有排行榜记录吗？")) { localStorage.removeItem(LB_STORAGE_KEY); renderLeaderboard(); } }
+
+function filterByCategory(cat) {
+  currentCategory = cat; playSoundClick();
+  document.querySelectorAll(".legend-item").forEach(function(el) { el.classList.remove("active-cat"); });
+  document.getElementById("filter-" + cat).classList.add("active-cat"); applyFilterView();
+}
+
+function toggleWrongOnly() {
+  showingWrongOnly = !showingWrongOnly; playSoundClick(); applyFilterView();
+}
+
+function applyFilterView() {
+  const btnFilter = document.getElementById("btnFilterWrong");
+  btnFilter.innerText = showingWrongOnly ? "显示全部题目" : "只看错题与解析";
+  const catKeys = ["diff", "mem", "scene", "ind", "acc"];
+  catKeys.forEach(function(catKey) {
+    const section = document.getElementById("section-" + catKey);
+    const matchSectionCat = (currentCategory === "all" || currentCategory === catKey);
+    if (!matchSectionCat) { section.style.display = "none"; return; }
+    let visibleCount = 0;
+    const catQuestions = questions.filter(function(q) { return q.cat === catKey; });
+    catQuestions.forEach(function(item) {
+      const card = document.getElementById("card" + item.id);
+      const matchWrong = (!showingWrongOnly || card.getAttribute("data-perfect") !== "true");
+      if (matchWrong) { card.style.display = "block"; visibleCount += 1; } else card.style.display = "none";
+    });
+    section.style.display = visibleCount > 0 ? "block" : "none";
+  });
+  setTimeout(function() { questions.forEach(function(item) { if (item.type === "match") refreshMatchUI(item.id); }); }, 50);
+}
+
+function resetQuiz() {
+  showingWrongOnly = false; currentCategory = "all"; playSoundClick();
+  document.querySelectorAll(".legend-item").forEach(function(el) { el.classList.remove("active-cat"); });
+  document.getElementById("filter-all").classList.add("active-cat");
+  document.getElementById("scoreBanner").style.display = "none";
+  document.getElementById("btnFilterWrong").style.display = "none";
+  renderQuiz(); startQuizTimer(); window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+renderQuiz();
+startQuizTimer();
+</script>
+</body>
+</html>
